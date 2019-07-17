@@ -1,9 +1,12 @@
 import React from 'react'
+import Sections from './Sections'
+import Nav from './Nav'
 
 const App = () => {
     return(
-        <div>
-            <h1>Hello World</h1>
+        <div className='container'>
+            <Nav />
+            <Sections />
         </div>
     )
 }

@@ -1,0 +1,69 @@
+.container1{
+    display: flex;
+    flex-direction: column;
+    background: #101b23;
+    color: white;
+    
+ }
+ .frontend{
+     display: grid;
+     grid-template-columns: repeat(2, minmax(200px, auto));
+     padding: 10% 0
+ }
+ .backend{
+     display: grid;
+     grid-template-columns: repeat(2, minmax(200px, auto));
+     padding: 10% 0
+ }
+ .uiux{
+     display: grid;
+     grid-template-columns: repeat(2, minmax(200px, auto));
+     padding: 10% 0
+ }
+ .mobapp{
+     display: grid;
+     grid-template-columns: repeat(2, minmax(200px, auto));
+     padding: 10% 0
+ }
+ .skillimg{
+     width:600px;
+     height: auto;
+ }
+ @media all and (max-width: 1020px) and (min-width: 700px){
+     .skillimg{
+         width:350px;
+         height: auto;
+     }
+ }
+ @media all and (max-width: 699px) and (min-width: 520px){
+     .skillimg{
+         width:300px;
+         padding-top: 20%;
+         height: auto;
+     }
+ }
+ @media all and (max-width: 519px){
+     .skillimg{
+         width:250px;
+         padding-top: 25%;
+         height: auto;
+     }
+ }
+ .rightimg{
+     justify-self: end;
+ }
+ .text{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+ }
+ .skillleft{
+     padding: 0 30% 0 0;
+ }
+ .skillright{
+     padding: 0 0 0 30%;
+ }
+ h1{
+     color: #3d8dac
+ }

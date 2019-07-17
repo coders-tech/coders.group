@@ -10,6 +10,10 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -34,5 +38,39 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      let mainNavLinks = document.querySelectorAll("nav ul li a");
+      let mainSections = document.querySelectorAll("sections div");
+  
+      let lastId;
+      let cur = [];
+  
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+  
+        mainNavLinks.forEach(link => {
+          let section = document.querySelector(link.hash);
+  
+          if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+          ) {
+            link.classList.add("current");
+            link.innerHTML = "--";
+          } else {
+            link.classList.remove("current");
+            link.innerHTML = "-";
+          }
+        });
+      });
+    </script>
   </body>
 </html>
