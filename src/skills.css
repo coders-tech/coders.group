@@ -3,30 +3,31 @@
     flex-direction: column;
     background: #101b23;
     color: white;
+    font-size: 1.3em
     
  }
  .frontend{
      display: grid;
      grid-template-columns: repeat(2, minmax(200px, auto));
-     padding: 10% 0
+     padding: 5% 0
  }
  .backend{
      display: grid;
      grid-template-columns: repeat(2, minmax(200px, auto));
-     padding: 10% 0
+     padding: 5% 0
  }
  .uiux{
      display: grid;
      grid-template-columns: repeat(2, minmax(200px, auto));
-     padding: 10% 0
+     padding: 5% 0
  }
  .mobapp{
      display: grid;
      grid-template-columns: repeat(2, minmax(200px, auto));
-     padding: 10% 0
+     padding: 5% 0
  }
  .skillimg{
-     width:600px;
+     width:550px;
      height: auto;
  }
  @media all and (max-width: 1020px) and (min-width: 700px){
@@ -51,19 +52,25 @@
  }
  .rightimg{
      justify-self: end;
+     padding-right: 20%;
  }
  .text{
      display: flex;
      flex-direction: column;
-     text-align: center;
      justify-content: center;
  }
  .skillleft{
-     padding: 0 30% 0 0;
+     padding: 0 30% 0 20%;
+     text-align: right;
  }
  .skillright{
-     padding: 0 0 0 30%;
+     padding: 0 20% 0 30%;
+     text-align: left;
+ }
+ h2{
+     color: #3d8dac
  }
  h1{
-     color: #3d8dac
+    padding: 5% 5% 0 0;
+    margin: 0 auto;
  }
