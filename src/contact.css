@@ -32,8 +32,7 @@
 input{
 	background-color: #fbfbfb; 
 	width: 70%; 
-	height: 4em; 
-	border-radius: 5px;  
+	height: 4em;  
 	border-style: solid; 
 	border-width: 1px; 
 	border-color: #3d8dac94; 
@@ -47,7 +46,7 @@ textarea{
   background-color: #fbfbfb; 
 	width: 70%; 
 	height: 9em; 
-	border-radius: 5px;  
+
 	border-style: solid; 
 	border-width: 1px; 
 	border-color: #3d8dac94; 
@@ -73,9 +72,8 @@ button{
 	text-transform: uppercase;
 	background-color: #3d8dacea; 
 	border-color: #3d8dac94; 
-	border-style: solid; 
-	border-radius: 10px;	
-	width: 73%;   
+	border-style: solid; 	
+	width: 40%;   
     cursor: pointer;
 }
 
