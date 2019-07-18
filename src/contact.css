@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.container2{
+    display: flex;
+  width: 100%;
+	padding: 1em;
+    margin: auto;
+    background-color: #101b23;
+}
+
+/* importação da fonte do google fonts */ 
+
+
+.contact_form{	
+	width: 40%; 
+  height: 100%;
+  margin: 0;
+	text-align: left;  
+  background-color: #101b23; 
+  color: #fff;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 5%;
+}
+
+input{
+	background-color: #fbfbfb; 
+	width: 70%; 
+	height: 4em; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #3d8dac94; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 70%; 
+	height: 9em; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #3d8dac94; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 4em; 
+	padding-left: 1em;
+	padding-right: 1em; 	
+	margin-bottom: 2em; 
+	margin-top: 2em; 	
+	text-transform: uppercase;
+	background-color: #3d8dacea; 
+	border-color: #3d8dac94; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 73%;   
+    cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+.contactImg{
+  margin: 0;
+  padding:0;
+  width: 60%;
+  background-image: url("https://images.unsplash.com/photo-1523474438810-b04a2480633c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-color: #3d8dac94;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

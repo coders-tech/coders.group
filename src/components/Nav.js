@@ -18,6 +18,9 @@ const Nav = () => {
         <li>
           <a href="#section-3">-</a>
         </li>
+        <li>
+          <a href="#section-4">-</a>
+        </li>
       </ul>
     </nav>
   );
