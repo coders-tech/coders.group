@@ -5,11 +5,9 @@ import { motion } from "framer-motion";
 
 const Mobdev = props => {
   const [ref, inView, entry] = useInView({ triggerOnce: true });
-  const fadeLeft = "animated fadeInLeft delay-0.5s";
-  const fadeRight = "animated fadeInRight delay-0.5s";
   return (
     <div className="mobapp">
-      <div ref={ref} className={`text skillleft ${inView && fadeLeft}`}>
+      <motion.div ref={ref} className={`text skillleft`} style={{x: -1000}} animate={inView && {x: 0}} transition={{duration: 1}}>
         <h2>Mobile Development</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum eius
@@ -17,12 +15,15 @@ const Mobdev = props => {
           minus delectus ab repudiandae nisi obcaecati odit optio ratione? Quas,
           dolorem libero!
         </p>
-      </div>
-      <img
+      </motion.div>
+      <motion.img
         src={props.img}
         alt="Mobile Development"
-        className={`skillimg rightimg ${inView && fadeRight}`}
+        className={`skillimg rightimg`}
         ref={ref}
+        style={{ opacity: 0 }}
+        animate={inView && { opacity: 1 }}
+        transition={{ duration: 2 }}
       />
     </div>
   );

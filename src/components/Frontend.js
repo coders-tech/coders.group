@@ -4,16 +4,21 @@ import { useInView } from "react-intersection-observer";
 import {motion} from 'framer-motion'
 
 const Frontend = (props) => {
-  const [ref, inView, entry] = useInView({triggerOnce: true});
-  const fadeLeft = 'animated fadeInLeft delay-0.5s'
-  const fadeRight = 'animated fadeInRight delay-0.5s'
+  const [ref, inView, entry] = useInView({
+    triggerOnce: true,
+    threshold: 0.5
+  });
+
   return (
     <div className="frontend">
-      <img
+      <motion.img
+        style={{opacity: 0}}
+        animate={inView && {opacity: 1}}
+        transition={{duration: 2}}
         src={props.img}
         alt="Frontend"
         ref={ref}
-        className={`skillimg leftimg ${inView && fadeLeft}`}
+        className={`skillimg leftimg`}
       />
       <motion.div
         style={{ x: 1000 }}
