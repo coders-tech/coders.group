@@ -55,7 +55,6 @@ nav ul li a.current {
   height: 100vh;
 }
 #section-2 {
-  height: 100vh;
   background-color: #ffffff;
 }
 .left {
@@ -88,4 +87,8 @@ nav ul li a.current {
     mix-blend-mode: screen;
     z-index: 99;
     color: white
+  }
+
+  svg{
+      color: white;
   }

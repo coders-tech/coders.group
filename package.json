@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "framer-motion": "^1.2.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-intersection-observer": "^8.24.1",
