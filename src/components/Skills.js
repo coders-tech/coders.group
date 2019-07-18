@@ -1,5 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import {useSpring, animated} from 'react-spring'
+
 
 import "../skills.css";
 import backend from "../img/backend2.png";
@@ -9,6 +11,7 @@ import mobdev from "../img/mobdev.png";
 
 const Skills = () => {
   const [ref, inView, entry] = useInView({triggerOnce: true});
+  const props = useSpring({opacity: inView ? 1 : 0, from: {opacity: 0}})
   const fadeLeft = 'animated fadeInLeft delay-0.5s'
   const fadeRight = 'animated fadeInRight delay-0.5s'
   return (
@@ -22,7 +25,7 @@ const Skills = () => {
               ref={ref}
               className={`skillimg leftimg ${inView && fadeLeft}`}
             />
-            <div ref={ref} className={`text skillright ${inView && fadeRight}`}>
+            <animated.div style={props}className={`text skillright`}>
               <h2>Frontend</h2>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
@@ -30,7 +33,7 @@ const Skills = () => {
                 consequatur minus delectus ab repudiandae nisi obcaecati odit
                 optio ratione? Quas, dolorem libero!
               </p>
-            </div>
+            </animated.div>
           </div>
         <div className="backend">
           <div ref={ref} className={`text skillleft ${inView && fadeLeft}`}>
