@@ -4,10 +4,10 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 const Backend = props => {
-  const [ref, inView, entry] = useInView({ triggerOnce: true });
+  const [ref, inView] = useInView({ triggerOnce: true });
   return (
     <div className="backend">
-      <motion.div ref={ref} className={`text skillleft`} style={{x: -1000}} animate={inView && {x: 0}} transition={{duration: 1}}>
+      <motion.div ref={ref} className={`text skillleft`} style={{x: -500, opacity: 0}} animate={inView && {opacity: 1, x: 0}} transition={{duration: 1}}>
         <h2>Backend</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum eius

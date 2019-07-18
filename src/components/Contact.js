@@ -4,15 +4,15 @@ import "../contact.css";
 const Contact = () => {
   return (
     <div id="section-4">
-        <div class="contact_form">
-          <div class="formulario">
+        <div className="contact_form">
+          <div className="formulario">
             <h1>Contact us</h1>
 
-            <form action="submeter-formulario.php" method="post">
+            <form action="" method="post">
               <p>
-                <label for="nome" class="colocar_nome">
+                <label className="colocar_nome">
                   Name
-                  <span class="obrigatorio">*</span>
+                  <span className="obrigatorio">*</span>
                 </label>
                 <input
                   type="text"
@@ -24,9 +24,9 @@ const Contact = () => {
               </p>
 
               <p>
-                <label for="email" class="colocar_email">
+                <label className="colocar_email">
                   Email
-                  <span class="obrigatorio">*</span>
+                  <span className="obrigatorio">*</span>
                 </label>
                 <input
                   type="email"
@@ -36,26 +36,14 @@ const Contact = () => {
                   placeholder="Enter your email"
                 />
               </p>
-
               <p>
-                <label for="telefone" class="colocar_telefone">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="telefone"
-                  placeholder="Enter your phone number"
-                />
-              </p>
-              <p>
-                <label for="message" class="colocar_mensagem">
+                <label className="colocar_mensagem">
                   Message
-                  <span class="obligatory">*</span>
+                  <span className="obligatory">*</span>
                 </label>
                 <textarea
                   name="message"
-                  class="message"
+                  className="message"
                   id="message"
                   required="obligatory"
                   placeholder="Text"
@@ -66,8 +54,8 @@ const Contact = () => {
                 <p>Submit</p>
               </button>
 
-              <p class="advice">
-                <span class="obligatory"> * </span>
+              <p className="advice">
+                <span className="obligatory"> * </span>
                 Please make sure you fill all required fields
               </p>
             </form>

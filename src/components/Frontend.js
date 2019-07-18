@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import {motion} from 'framer-motion'
 
 const Frontend = (props) => {
-  const [ref, inView, entry] = useInView({
+  const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5
   });
@@ -21,8 +21,8 @@ const Frontend = (props) => {
         className={`skillimg leftimg`}
       />
       <motion.div
-        style={{ x: 1000 }}
-        animate={inView && { x: 0 }}
+        style={{ x: 500, opacity: 0}}
+        animate={inView && {opacity: 1, x: 0}}
         transition={{ duration: 1 }}
         className={`text skillright`}
       >

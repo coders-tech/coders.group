@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 const Uiux = props => {
-  const [ref, inView, entry] = useInView({ triggerOnce: true });
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
     <div className="uiux">
@@ -18,8 +18,8 @@ const Uiux = props => {
         transition={{ duration: 1 }}
       />
       <motion.div
-        style={{ x: 1000 }}
-        animate={inView && { x: 0 }}
+        style={{ x: 500, opacity: 0 }}
+        animate={inView && { opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className={`text skillright`}
       >

@@ -4,10 +4,10 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 const Mobdev = props => {
-  const [ref, inView, entry] = useInView({ triggerOnce: true });
+  const [ref, inView] = useInView({ triggerOnce: true });
   return (
     <div className="mobapp">
-      <motion.div ref={ref} className={`text skillleft`} style={{x: -1000}} animate={inView && {x: 0}} transition={{duration: 1}}>
+      <motion.div ref={ref} className={`text skillleft`} style={{x: -500}} animate={inView && {x: 0}} transition={{duration: 1}}>
         <h2>Mobile Development</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum eius
