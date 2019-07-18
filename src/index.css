@@ -55,8 +55,11 @@ nav ul li a.current {
   height: 100vh;
 }
 #section-2 {
-  height: 100vh;
   background-color: #ffffff;
+}
+#section-4{
+    display: flex;
+    height: 100vh;
 }
 .left {
   background-color: #101b23;
@@ -89,3 +92,21 @@ nav ul li a.current {
     z-index: 99;
     color: white
   }
+  .scroll-progress-circle {
+    position: fixed;
+    margin: 0 auto;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    width: 5vw;
+    height: auto;
+    fill: none;
+    stroke: var(--scroll-progress-circle-color, #56afd3);
+    stroke-width: 3px;
+    stroke-dashoffset: 125.6811294555664;
+    stroke-dasharray: 125.6811294555664;
+    background-color: var(--scroll-progress-circle-bg-color, #101b2300);
+    border-radius: 50%;
+  }
+
+ 

@@ -5,7 +5,7 @@ const Header = () => {
     <div id="section-1">
       <div className="left">
 
-          <h1 className='animated zoomIn delay-0.9s'>CODERS.<span id="logo">GROUP</span></h1>
+          <h1 className='animated zoomIn delay-0.9s'>CODERS/<span id="logo">GROUP</span></h1>
 
 
         <p className="animated fadeIn delay-2s">
