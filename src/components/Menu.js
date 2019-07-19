@@ -30,7 +30,7 @@ const Menu = () => {
           />
           <div class="third" style={style ? {transform: "translateY(-15px) rotate(-45deg)",transition: "all 0.5s ease"} : {}} />
         </div>
-        <div className='menuContent' style={{visibility: visibility}}>
+        <div className='menuContent' style={style ? {visibility: 'visible', opacity: 1, transition: "all 1s ease"} : {visibility: 'hidden', opacity: 0}}>
             <div className="menuContentlist">
                 <ul>
                     <a href="#section-1" onClick={handleClick}><li data-content="Home">Home</li></a>
