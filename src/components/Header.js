@@ -4,7 +4,7 @@ import Menu from './Menu'
 const Header = () => {
   return (
     <div id="section-1">
-      <Menu />
+      
       <div className="left">
 
           <h1 className='animated zoomIn delay-0.9s'>CODERS/<span id="logo">GROUP</span></h1>
@@ -18,6 +18,7 @@ const Header = () => {
         </p>
       </div>
       <div className="right" />
+      <Menu />
     </div>
   );
 };
