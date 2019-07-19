@@ -5,6 +5,7 @@
   "dependencies": {
     "framer-motion": "^1.2.4",
     "react": "^16.8.6",
+    "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.6",
     "react-intersection-observer": "^8.24.1",
     "react-scripts": "3.0.1",

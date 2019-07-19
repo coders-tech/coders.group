@@ -1,8 +1,17 @@
 import React from "react";
+import {slide as Menu} from 'react-burger-menu'
+
 
 const Header = () => {
   return (
     <div id="section-1">
+      <Menu pageWrapId={ "page-wrap" } right width={'100%'}>
+      <main id="page-wrap">
+    .
+    .
+    .
+        </main>
+      </Menu>
       <div className="left">
 
           <h1 className='animated zoomIn delay-0.9s'>CODERS/<span id="logo">GROUP</span></h1>
