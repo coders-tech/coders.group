@@ -7,7 +7,7 @@ const Mobdev = props => {
   const [ref, inView] = useInView({ triggerOnce: true });
   return (
     <div className="mobapp">
-      <motion.div ref={ref} className={`text skillleft`} style={{x: -500}} animate={inView && {x: 0}} transition={{duration: 1}}>
+      <motion.div ref={ref} className={`text skillleft`} style={{x: -100}} animate={inView && {x: 0}} transition={{duration: 1}}>
         <h2>Mobile Development</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum eius

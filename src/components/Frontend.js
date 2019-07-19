@@ -21,7 +21,7 @@ const Frontend = (props) => {
         className={`skillimg leftimg`}
       />
       <motion.div
-        style={{ x: 500, opacity: 0}}
+        style={{ x: -100, opacity: 0}}
         animate={inView && {opacity: 1, x: 0}}
         transition={{ duration: 1 }}
         className={`text skillright`}
