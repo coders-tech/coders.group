@@ -21,12 +21,12 @@ const Menu = () => {
           <div class="third" />
         </div>
         <div className='menuContent' style={{visibility: visibility}}>
-            <div>
+            <div className="menuContentlist">
                 <ul>
-                    <li><a href="#section-1" onClick={handleClick}>home</a></li>
-                    <li><a href="#section-2" onClick={handleClick}>Our Services</a></li>
-                    <li><a href="#section-3" onClick={handleClick}>Our Team</a></li>
-                    <li><a href="#section-4" onClick={handleClick}>Contact us</a></li>
+                    <a href="#section-1" onClick={handleClick}><li data-content="Home">Home</li></a>
+                    <a href="#section-2" onClick={handleClick}><li data-content="Our Services">Our Services</li></a>
+                    <a href="#section-3" onClick={handleClick}><li data-content="Our Team">Our Team</li></a>
+                    <a href="#section-4" onClick={handleClick}><li data-content="Contact Us">Contact us</li></a>
                 </ul>
             </div>
         </div>
