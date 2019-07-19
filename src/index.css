@@ -98,8 +98,8 @@ nav ul li a.current {
   .scroll-progress-circle {
     position: fixed;
     margin: 0 auto;
-    bottom: 20px;
-    left: 0px;
+    bottom: 3em;
+    right: 2em;
     z-index: 99;
     width: 5vw;
     height: auto;
