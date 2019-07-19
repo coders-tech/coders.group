@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 html {
   scroll-behavior: smooth;
+  overflow: -moz-scrollbars-none;
 }
+::-webkit-scrollbar { width: 0 !important }
+
 body {
   margin: 0;
   padding: 0;
