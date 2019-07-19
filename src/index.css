@@ -99,7 +99,7 @@ nav ul li a.current {
     position: fixed;
     margin: 0 auto;
     bottom: 20px;
-    left: 20px;
+    left: 0px;
     z-index: 99;
     width: 5vw;
     height: auto;
@@ -143,3 +143,19 @@ nav ul li a.current {
   }
 
   /* Wrapper for item list */
+  .navstyle{
+    width: 30%;
+    height: 2px;
+    background: #56afd3;
+    margin: 20% 0;
+    padding: 1% 0;
+    transition: width 1s ease;
+  }
+  .navstyle1 {
+    width: 45%;
+    height: 2px;
+    background: #56afd3;
+    margin: 20% 0;
+    padding: 1% 0;
+    transition: width 1s ease;
+  }

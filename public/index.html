@@ -65,10 +65,11 @@
           section.offsetTop + section.offsetHeight > fromTop
         ) {
           link.classList.add("current");
-          link.innerHTML = "--";
+          link.style.width = "45%";
         } else {
           link.classList.remove("current");
-          link.innerHTML = "-";
+          link.style.width = "30%";
+
         }
       });
     });
