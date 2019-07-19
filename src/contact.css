@@ -30,7 +30,7 @@
 
 input {
   background-color: #fbfbfb;
-  width: 70%;
+  width: 90%;
   height: 4em;
   border-style: solid;
   border-width: 1px;
@@ -40,7 +40,7 @@ input {
 
 textarea {
   background-color: #fbfbfb;
-  width: 70%;
+  width: 90%;
   height: 9em;
 
   border-style: solid;
@@ -63,7 +63,7 @@ button {
   background-color: #3d8dacea;
   border-color: #3d8dac94;
   border-style: solid;
-  width: 40%;
+  width: 95%;
   cursor: pointer;
 }
 

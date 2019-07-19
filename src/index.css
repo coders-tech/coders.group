@@ -111,51 +111,19 @@ nav ul li a.current {
     background-color: var(--scroll-progress-circle-bg-color, #101b2300);
     border-radius: 50%;
   }
-  .bm-burger-button {
-    position: fixed;
-    width: 36px;
-    height: 30px;
-    right: 36px;
-    top: 36px;
-  }
-  .bm-cross {
-    background: #ffffff;
-  }
-  .bm-cross-button {
-    height: 2em;
-    width: 2em;
-  }
-
-  .bm-burger-bars {
-    background: #ffffff;
-  }
-
-  .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-  }
-  
-  /* General sidebar styles */
-  .bm-menu {
-  background: #101b23;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
 
   /* Wrapper for item list */
   .navstyle{
     width: 30%;
-    height: 2px;
+    height: 5px;
     background: #56afd3;
     margin: 20% 0;
-    padding: 1% 0;
     transition: width 1s ease;
   }
   .navstyle1 {
     width: 45%;
-    height: 2px;
+    height: 5px;
     background: #56afd3;
     margin: 20% 0;
-    padding: 1% 0;
     transition: width 1s ease;
   }
