@@ -3,6 +3,15 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
+const flexStyle = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(4, auto)'
+}
+const iconStyle = {
+  fontSize: '2em',
+  paddingLeft: '1em'
+}
+
 const Mobdev = props => {
   const [ref, inView] = useInView({ triggerOnce: true });
   return (
@@ -15,6 +24,12 @@ const Mobdev = props => {
           minus delectus ab repudiandae nisi obcaecati odit optio ratione? Quas,
           dolorem libero!
         </p>
+        <div className={`icons`} style={flexStyle}>
+          <i className={`fas fa-mobile`} style={iconStyle}></i>
+          <i className={`fab fa-apple`} style={iconStyle}></i>
+          <i className={`fab fa-android`} style={iconStyle}></i>
+          <i className={`fab fa-react`} style={iconStyle}></i>
+        </div>
       </motion.div>
       <motion.img
         src={props.img}

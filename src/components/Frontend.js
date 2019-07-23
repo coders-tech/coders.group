@@ -7,20 +7,17 @@ import {makeStyles, createStyles} from '@material-ui/styles'
 import { useInView } from "react-intersection-observer";
 import {motion} from 'framer-motion'
 
-const useStyles = makeStyles((theme: Theme) => createStyles({
-  icons: {
-    width: "auto",
-    height: "50px",
-    paddingRight: "1em"
-  },
-  flex: {
-    display: 'flex',
-  }
-}))
+const flexStyle = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(4, auto)'
+}
+const iconStyle = {
+  fontSize: '2em',
+  paddingLeft: '1em'
+}
 
 
 const Frontend = (props) => {
-  const classes = useStyles()
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5
@@ -48,10 +45,11 @@ const Frontend = (props) => {
         Your website is ofthen the first experience someone will have with your organization. At coders.group we make sure to make the best
         first impression, with engaging, dynamic website design using the latest technologies 
         </p>
-        <div className={`icons ${classes.flex}`}>
-          <img src={reactIcon} alt="ReactJS" className={classes.icons}/>
-          <img src={angularIcon} alt="Angular" className={classes.icons}/>
-          <img src={gatsbyIcon} alt="Gatsby" className={classes.icons}/>
+        <div className={`icons`} style={flexStyle}>
+          <i className={`fab fa-react`} style={iconStyle}></i>
+          <i className={`fab fa-angular `} style={iconStyle}></i>
+          <i className={`fab fa-vuejs`} style={iconStyle}></i>
+          <i className={`fab fa-js`} style={iconStyle}></i>
         </div>
       </motion.div>
     </div>
