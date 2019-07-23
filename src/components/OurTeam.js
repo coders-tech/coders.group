@@ -17,7 +17,7 @@ const OurTeam = () => {
             <img src="http://pngimg.com/uploads/steve_jobs/steve_jobs_PNG2.png" className="profileImgN" alt="Nikita" />
           </div>
           <div className="Denis">
-          <img src="http://pngimg.com/uploads/steve_jobs/steve_jobs_PNG2.png"  className="profileImgD" alt="Denis" />
+          <img src="http://pngimg.com/uploads/mark_zuckerberg/mark_zuckerberg_PNG22.png"  className="profileImgD" alt="Denis" />
           <div className ="memberDescription">
           
                 <h1>Denis</h1>
