@@ -1,9 +1,26 @@
 import React from 'react'
+import reactIcon from "../img/react.png";
+import angularIcon from "../img/angular.png";
+import gatsbyIcon from "../img/gatsby.png";
+import {makeStyles, createStyles} from '@material-ui/styles'
 
 import { useInView } from "react-intersection-observer";
 import {motion} from 'framer-motion'
 
+const useStyles = makeStyles((theme: Theme) => createStyles({
+  icons: {
+    width: "auto",
+    height: "50px",
+    paddingRight: "1em"
+  },
+  flex: {
+    display: 'flex',
+  }
+}))
+
+
 const Frontend = (props) => {
+  const classes = useStyles()
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5
@@ -28,11 +45,14 @@ const Frontend = (props) => {
       >
         <h2>Frontend</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum eius
-          corporis laborum assumenda hic veritatis aut perferendis, consequatur
-          minus delectus ab repudiandae nisi obcaecati odit optio ratione? Quas,
-          dolorem libero!
+        Your website is ofthen the first experience someone will have with your organization. At coders.group we make sure to make the best
+        first impression, with engaging, dynamic website design using the latest technologies 
         </p>
+        <div className={`icons ${classes.flex}`}>
+          <img src={reactIcon} alt="ReactJS" className={classes.icons}/>
+          <img src={angularIcon} alt="Angular" className={classes.icons}/>
+          <img src={gatsbyIcon} alt="Gatsby" className={classes.icons}/>
+        </div>
       </motion.div>
     </div>
   );

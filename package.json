@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/styles": "^4.2.1",
     "framer-motion": "^1.2.4",
     "react": "^16.8.6",
     "react-burger-menu": "^2.6.10",

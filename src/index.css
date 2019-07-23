@@ -127,3 +127,6 @@ nav ul li a.current {
     margin: 20% 0;
     transition: width 1s ease;
   }
+  .coders{
+    font-size: 21px;
+  }

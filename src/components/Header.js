@@ -10,11 +10,8 @@ const Header = () => {
           <h1 className='animated zoomIn delay-0.9s'>CODERS/<span id="logo">GROUP</span></h1>
 
 
-        <p className="animated fadeIn delay-2s">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam rem
-          perferendis quo, voluptatum placeat laborum asperiores deserunt,
-          excepturi delectus officiis adipisci ducimus, atque harum soluta
-          exercitationem ullam recusandae at eos!
+        <p className="animated fadeIn delay-2s coders">
+        At coders.group we combine technology, creativity and strategy to transform your ideas into products.
         </p>
       </div>
       <div className="right" />
