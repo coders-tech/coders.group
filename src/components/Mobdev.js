@@ -4,31 +4,35 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 const flexStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(4, auto)'
-}
+  display: "grid",
+  gridTemplateColumns: "repeat(4, auto)"
+};
 const iconStyle = {
-  fontSize: '2em',
-  paddingLeft: '1em'
-}
+  fontSize: "2em",
+  paddingLeft: "1em"
+};
 
 const Mobdev = props => {
   const [ref, inView] = useInView({ triggerOnce: true });
   return (
     <div className="mobapp">
-      <motion.div ref={ref} className={`text skillleft`} style={{x: -100}} animate={inView && {x: 0}} transition={{duration: 1}}>
+      <motion.div
+        ref={ref}
+        className={`text skillleft`}
+        style={{ x: -100 }}
+        animate={inView && { x: 0 }}
+        transition={{ duration: 1 }}
+      >
         <h2>Mobile Development</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum eius
-          corporis laborum assumenda hic veritatis aut perferendis, consequatur
-          minus delectus ab repudiandae nisi obcaecati odit optio ratione? Quas,
-          dolorem libero!
+          At coders.group we focus on providing quality products. We create
+          cross-platform applications, accessible on any device.
         </p>
         <div className={`icons`} style={flexStyle}>
-          <i className={`fas fa-mobile`} style={iconStyle}></i>
-          <i className={`fab fa-apple`} style={iconStyle}></i>
-          <i className={`fab fa-android`} style={iconStyle}></i>
-          <i className={`fab fa-react`} style={iconStyle}></i>
+          <i className={`fas fa-mobile`} style={iconStyle} />
+          <i className={`fab fa-apple`} style={iconStyle} />
+          <i className={`fab fa-android`} style={iconStyle} />
+          <i className={`fab fa-react`} style={iconStyle} />
         </div>
       </motion.div>
       <motion.img

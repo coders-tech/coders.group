@@ -4,13 +4,13 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 const flexStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(4, auto)'
-}
+  display: "grid",
+  gridTemplateColumns: "repeat(4, auto)"
+};
 const iconStyle = {
-  fontSize: '2em',
-  paddingLeft: '1em'
-}
+  fontSize: "2em",
+  paddingLeft: "1em"
+};
 
 const Uiux = props => {
   const [ref, inView] = useInView({ triggerOnce: true });
@@ -32,18 +32,17 @@ const Uiux = props => {
         transition={{ duration: 1 }}
         className={`text skillright`}
       >
-        <h2>UX/UI</h2>
+        <h2>UI/UX</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum eius
-          corporis laborum assumenda hic veritatis aut perferendis, consequatur
-          minus delectus ab repudiandae nisi obcaecati odit optio ratione? Quas,
-          dolorem libero!
+          We create UI/UX design for digital products with one goal in mind:
+          valuable, memorable, seamless user experience, exceeding customers
+          expectations
         </p>
         <div className={`icons`} style={flexStyle}>
-          <i className={`fab fa-adobe`} style={iconStyle}></i>
-          <i className={`fas fa-pencil-ruler`} style={iconStyle}></i>
-          <i className={`fab fa-behance`} style={iconStyle}></i>
-          <i className={`fas fa-drafting-compass`} style={iconStyle}></i>
+          <i className={`fab fa-adobe`} style={iconStyle} />
+          <i className={`fas fa-pencil-ruler`} style={iconStyle} />
+          <i className={`fab fa-behance`} style={iconStyle} />
+          <i className={`fas fa-drafting-compass`} style={iconStyle} />
         </div>
       </motion.div>
     </div>

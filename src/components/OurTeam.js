@@ -14,7 +14,7 @@ const OurTeam = () => {
                     <p>senior web developer <br />
                     Co-Founder of Coders.Group</p>
             </div>
-            <img src="http://pngimg.com/uploads/steve_jobs/steve_jobs_PNG2.png" className="profileImgN" alt="Nikita" />
+            <img src="https://www.pngarts.com/files/4/Steve-Jobs-PNG-Photo.png" className="profileImgN" alt="Nikita" />
           </div>
           <div className="Denis">
           <img src="http://pngimg.com/uploads/mark_zuckerberg/mark_zuckerberg_PNG22.png"  className="profileImgD" alt="Denis" />
