@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from './Menu'
+import {motion} from 'framer-motion'
 
 const Header = () => {
   return (
@@ -7,10 +8,14 @@ const Header = () => {
       
       <div className="left">
 
-          <h1 className='animated zoomIn delay-0.9s'>CODERS/<span id="logo">GROUP</span></h1>
+          <motion.h1
+            style={{scale: 0}}
+            animate={{scale:1}}
+            transition={{duration: 0.5}}
+          >CODERS/<span id="logo">GROUP</span></motion.h1>
 
 
-        <p className="animated fadeIn delay-2s coders">
+        <p className="animated fadeIn delay-1s coders">
         At coders.group we combine technology, creativity and strategy to transform your ideas into products.
         </p>
       </div>
