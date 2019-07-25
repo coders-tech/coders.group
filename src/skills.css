@@ -1,75 +1,174 @@
-.container1{
+.container1 {
+  display: flex;
+  flex-direction: column;
+  background: #101b23;
+  color: white;
+  font-size: 1.3em;
+}
+.frontend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, auto));
+  padding: 5% 0;
+}
+.backend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, auto));
+  padding: 5% 0;
+}
+.uiux {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, auto));
+  padding: 5% 0;
+}
+.mobapp {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, auto));
+  padding: 5% 0;
+}
+.skillimg {
+  width: 550px;
+  height: auto;
+}
+.rightimg {
+  justify-self: end;
+  padding-right: 20%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skillleft {
+  padding: 0 30% 0 20%;
+  text-align: right;
+}
+.skillright {
+  padding: 0 20% 0 30%;
+  text-align: left;
+}
+h2 {
+  color: #3d8dac;
+}
+h1 {
+  padding: 5% 5% 0 0;
+  margin: 0 auto;
+}
+.gridStyle{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.iconStyle{
+    font-size: 2em;
+}
+
+
+@media all and (max-width: 1070px) {
+  .skillimg {
+    width: 350px;
+    height: auto;
+  }
+}
+@media all and (max-width: 784px){
+  .skillimg {
+    width: 300px;
+    padding-top: 20%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .frontend {
     display: flex;
     flex-direction: column;
-    background: #101b23;
-    color: white;
-    font-size: 1.3em;
- }
- .frontend{
-     display: grid;
-     grid-template-columns: repeat(2, minmax(200px, auto));
-     padding: 5% 0
- }
- .backend{
-     display: grid;
-     grid-template-columns: repeat(2, minmax(200px, auto));
-     padding: 5% 0
- }
- .uiux{
-     display: grid;
-     grid-template-columns: repeat(2, minmax(200px, auto));
-     padding: 5% 0
- }
- .mobapp{
-     display: grid;
-     grid-template-columns: repeat(2, minmax(200px, auto));
-     padding: 5% 0
- }
- .skillimg{
-     width:550px;
-     height: auto;
- }
- @media all and (max-width: 1020px) and (min-width: 700px){
-     .skillimg{
-         width:350px;
-         height: auto;
-     }
- }
- @media all and (max-width: 699px) and (min-width: 520px){
-     .skillimg{
-         width:300px;
-         padding-top: 20%;
-         height: auto;
-     }
- }
- @media all and (max-width: 519px){
-     .skillimg{
-         width:250px;
-         padding-top: 25%;
-         height: auto;
-     }
- }
- .rightimg{
-     justify-self: end;
-     padding-right: 20%;
- }
- .text{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
- }
- .skillleft{
-     padding: 0 30% 0 20%;
-     text-align: right;
- }
- .skillright{
-     padding: 0 20% 0 30%;
-     text-align: left;
- }
- h2{
-     color: #3d8dac
- }
- h1{
-    padding: 5% 5% 0 0;
-    margin: 0 auto;
- }
+    justify-content: center;
+  }
+  .backend {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .uiux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mobapp {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .skillleft {
+    padding: 0;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .skillright {
+    padding: 0;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .rightimg {
+    padding:0;
+    margin: 0 auto
+  }
+  .leftimg {
+    padding: 5% 0;
+    margin: 0 auto
+  }
+  .gridStyle{
+    display: flex;
+    justify-content: center;
+  }
+  .iconStyle{
+    padding: 0 20px;
+  }
+}
+@media all and (max-width: 519px) {
+  .skillimg {
+    width: 250px;
+    padding-top: 25%;
+    height: auto;
+  }
+  .frontend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .backend {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .uiux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mobapp {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .skillleft {
+    padding: 0;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .skillright {
+    padding: 0;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .rightimg {
+    padding:0;
+    margin: 0 auto
+  }
+  .leftimg {
+    padding: 5% 0;
+    margin: 0 auto
+  }
+  .iconStyle{
+    font-size: 1.5em;
+    padding: 0.5em;
+  }
+  
+}
+

@@ -8,15 +8,15 @@ const OurTeam = () => {
       <div className="container3">
           <h1>Our Team</h1>
         <div className="ourteam">
-          <div className="Nikita">
+          {/* <div className="Nikita">
             <div className ="memberDescription">
                     <h1>Nikita</h1>
                     <p>senior web developer <br />
                     Co-Founder of Coders.Group</p>
             </div>
             <img src="https://www.pngarts.com/files/4/Steve-Jobs-PNG-Photo.png" className="profileImgN" alt="Nikita" />
-          </div>
-          <div className="Denis">
+          </div> */}
+          {/* <div className="Denis">
           <img src="http://pngimg.com/uploads/mark_zuckerberg/mark_zuckerberg_PNG22.png"  className="profileImgD" alt="Denis" />
           <div className ="memberDescription">
           
@@ -24,7 +24,7 @@ const OurTeam = () => {
                 <p>senior web developer <br />
                 Co-Founder of Coders.Group</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

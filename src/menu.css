@@ -49,7 +49,7 @@
   right: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   z-index: 100;
   background: #101b23;
@@ -113,4 +113,14 @@ ul li:after {
 }
 a{ 
   text-decoration: none;
+}
+
+@media all and (max-width: 1070px) {
+  .navbar {
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+  }
 }

@@ -3,16 +3,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
-import { makeStyles, createStyles } from "@material-ui/styles";
 
-const flexStyle = {
-  display: "grid",
-  gridTemplateColumns: "repeat(4, auto)"
-};
-const iconStyle = {
-  fontSize: "2em",
-  paddingLeft: "1em"
-};
 
 const Backend = props => {
   const [ref, inView] = useInView({ triggerOnce: true });
@@ -32,11 +23,11 @@ const Backend = props => {
           you need to think beyond design. At coders.group we develop scalable
           backend architectures to deliver productive user experience.
         </p>
-        <div className={`icons`} style={flexStyle}>
-          <i className={`fab fa-node`} style={iconStyle} />
-          <i className={`fab fa-python `} style={iconStyle} />
-          <i className={`fab fa-aws`} style={iconStyle} />
-          <i className={`fab fa-digital-ocean`} style={iconStyle} />
+        <div className={`icons gridStyle`} >
+          <i className={`fab fa-node iconStyle`} />
+          <i className={`fab fa-python iconStyle `} />
+          <i className={`fab fa-aws iconStyle`} />
+          <i className={`fab fa-digital-ocean iconStyle`} />
         </div>
       </motion.div>
       <motion.img

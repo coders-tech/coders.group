@@ -3,15 +3,6 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
-const flexStyle = {
-  display: "grid",
-  gridTemplateColumns: "repeat(4, auto)"
-};
-const iconStyle = {
-  fontSize: "2em",
-  paddingLeft: "1em"
-};
-
 const Uiux = props => {
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -38,11 +29,11 @@ const Uiux = props => {
           valuable, memorable, seamless user experience, exceeding customers
           expectations
         </p>
-        <div className={`icons`} style={flexStyle}>
-          <i className={`fab fa-adobe`} style={iconStyle} />
-          <i className={`fas fa-pencil-ruler`} style={iconStyle} />
-          <i className={`fab fa-behance`} style={iconStyle} />
-          <i className={`fas fa-drafting-compass`} style={iconStyle} />
+        <div className={`icons gridStyle`}>
+          <i className={`fab fa-adobe iconStyle`} />
+          <i className={`fas fa-pencil-ruler iconStyle`} />
+          <i className={`fab fa-behance iconStyle`} />
+          <i className={`fas fa-drafting-compass iconStyle`}/>
         </div>
       </motion.div>
     </div>

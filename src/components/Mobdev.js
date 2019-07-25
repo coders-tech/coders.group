@@ -3,14 +3,6 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
-const flexStyle = {
-  display: "grid",
-  gridTemplateColumns: "repeat(4, auto)"
-};
-const iconStyle = {
-  fontSize: "2em",
-  paddingLeft: "1em"
-};
 
 const Mobdev = props => {
   const [ref, inView] = useInView({ triggerOnce: true });
@@ -28,11 +20,11 @@ const Mobdev = props => {
           At coders.group we focus on providing quality products. We create
           cross-platform applications, accessible on any device.
         </p>
-        <div className={`icons`} style={flexStyle}>
-          <i className={`fas fa-mobile`} style={iconStyle} />
-          <i className={`fab fa-apple`} style={iconStyle} />
-          <i className={`fab fa-android`} style={iconStyle} />
-          <i className={`fab fa-react`} style={iconStyle} />
+        <div className={`icons gridStyle`}>
+          <i className={`fas fa-mobile iconStyle`} />
+          <i className={`fab fa-apple iconStyle`} />
+          <i className={`fab fa-android iconStyle`} />
+          <i className={`fab fa-react iconStyle`} />
         </div>
       </motion.div>
       <motion.img

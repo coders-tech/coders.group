@@ -9,10 +9,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: system-ui, sans-serif;
-  /* this breaks position sticky in Firefox */
-  /* overflow-x: hidden; */
   display: grid;
   font-family: "Roboto", sans-serif;
+  min-width: 300px;
 }
 .container {
   margin-left: 5vw;
@@ -22,7 +21,7 @@ body {
 nav {
   white-space: nowrap;
   background: #101b23;
-  height: 100vh;
+  height: 100%;
   width: 5vw;
   position: fixed;
   overflow-x: hidden;
@@ -35,12 +34,7 @@ nav ul {
   padding: 0;
 }
 /* Only stick if you can fit */
-@media (min-height: 300px) {
-  nav ul {
-    position: sticky;
-    top: 0;
-  }
-}
+
 nav ul li a {
   display: block;
   color: white;
@@ -129,4 +123,22 @@ nav ul li a.current {
   }
   .coders{
     font-size: 21px;
+  }
+
+  @media (max-width: 1070px) {
+    nav {
+      white-space: nowrap;
+      background: #101b23;
+      height: 8%;
+      width: 100%;
+      position: fixed;
+      overflow-x: hidden;
+      top: 0; /* Stay at the top */
+      left: 0;
+      z-index: 101;
+    }
+    .container {
+      margin-left: 0;
+      display: flex;
+    }
   }
