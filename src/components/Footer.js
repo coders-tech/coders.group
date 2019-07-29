@@ -4,7 +4,12 @@ import '../footer.css'
 const Footer = () => {
     return(
         <div id="section-4">
+
             <div className='footer'>
+            <div>
+                    <p>© coders.group</p>
+                    
+                </div>
                 <div>
                     <p>follow us on:</p>
                     <ul className='footerNav'>

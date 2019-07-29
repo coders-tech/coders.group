@@ -1,20 +1,24 @@
 #section-4{
     display: flex;
     width: 100%;
+    background: #101b23;
 }
 
 .footer {
   display: flex;
   background: #101b23;
-  width: 100%;
+  width: 50%;
   color: white;
-  font-size: 20px;
+  font-size: 1em;
+  margin: 0 auto;
   align-content: center;
-  justify-content: space-around;
+  justify-content:space-between;
+  border-top: 1px white solid;
+  margin-right: 25%;
 }
 .footer ul {
   list-style: none;
-  font-size: 20px
+  font-size: 1em;
 }
 .footer ul li {
   display: inline;
