@@ -1,7 +1,6 @@
 import React from "react";
 import Header from './Header'
 import Skills from './Skills'
-import Contact from './Contact'
 import OurTeam from './OurTeam'
 
 const Sections = () => {
@@ -10,7 +9,6 @@ const Sections = () => {
       <Header />
       <Skills />
       <OurTeam />
-      <Contact />
     </div>
   );
 };
