@@ -28,14 +28,60 @@
 }
  .Nikita{
      display: grid;
-     grid-template-columns: repeat(2, minmax(auto, auto));
+     grid-template-columns: repeat(2, minmax(0, auto));
      border: 10px solid white;
  }
  .Denis{
     display: grid;
-    grid-template-columns: repeat(2, minmax(100px, auto));
+    grid-template-columns: repeat(2, minmax(0, auto));
     border: 10px solid white;
 }
 .memberDescription{
     justify-self: center;
+    z-index: 1;
+    
+}
+.Nikita .memberDescription{
+    padding: 0 0 0 10px
+}
+@media (max-width: 1070px) {
+    .profileImgD{
+        width:200px;
+        margin-top:1.25em;
+    }
+    .profileImgN{
+       width:200px;
+       margin-top: 1.25em;
+   }
+   
+
+}
+@media all and (max-width: 784px){
+   
+    .ourteam{
+        display: flex;
+        flex-direction: column;
+     }
+     .Nikita{
+         margin: 0 0 20px 0;
+     }
+     .profileImgD{
+        width:270px;
+        margin-top:1.25em;
+    }
+    .profileImgN{
+       width:270px;
+       margin-top: 1.25em;
+   }
+}
+@media all and (max-width: 519px){
+    .profileImgD{
+        width:200px;
+        margin-top:1.25em;
+    }
+    .profileImgN{
+       width:200px;
+       margin-top: 1.25em;
+   }
+   
 }
