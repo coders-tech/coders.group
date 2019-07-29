@@ -11,6 +11,7 @@ const Menu = () => {
   };
   return (
     <div className="menu">
+      <div className="logo"><a href="#section-1">C/G</a></div>
       <div class="wrapper">
         <div class="navbar" onClick={handleClick} style={style ? {"border-radius":"50%", transition: "all 0.3s ease"} : {}} >
           <div

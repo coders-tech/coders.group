@@ -114,7 +114,25 @@ ul li:after {
 a{ 
   text-decoration: none;
 }
-
+.logo{
+  display: none;
+  position: fixed;
+  text-align: center;
+  z-index: 101;
+  margin: 6px 10px;
+  padding: 0 10px;
+  top: 0;
+  left: 0;
+  width: auto;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+  font-size: 35px;
+  transition: all 0.3s ease;
+}
+.logo a{
+  text-decoration: none;
+  color:white;
+}
 @media all and (max-width: 1070px) {
   .navbar {
     top: 0;
@@ -122,5 +140,23 @@ a{
     width: 50px;
     height: 50px;
     border: none;
+  }
+  ul {
+    font-size: 5em;
+  }
+  .logo{
+    display: block;
+  }
+  
+  @media all and (max-width: 784px){
+    ul {
+      font-size: 3.8em;
+    }
+  }
+  @media all and (max-width: 519px) {
+    ul {
+      padding: 30% 0;
+      font-size: 2em;
+    }
   }
 }
