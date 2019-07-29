@@ -126,7 +126,7 @@ a{
   width: auto;
   border: 3px solid #ffffff;
   cursor: pointer;
-  font-size: 35px;
+  font-size: 32px;
   transition: all 0.3s ease;
   font-family: 'Chakra Petch';
 }
@@ -136,7 +136,7 @@ a{
 }
 @media all and (max-width: 1070px) {
   .navbar {
-    top: 0;
+    top: 0.35em;
     right: 0;
     width: 50px;
     height: 50px;
