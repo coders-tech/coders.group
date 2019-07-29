@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap');
 html {
   scroll-behavior: smooth;
   overflow: -moz-scrollbars-none;
@@ -78,6 +79,7 @@ nav ul li a.current {
 }
  .left h1 {
     margin: 0 auto;
+    font-family: 'Chakra Petch';
     font-size: 8vw;
     width: auto;
     text-align: center;
@@ -167,6 +169,7 @@ nav ul li a.current {
     }
     .TextOnTablets h1{
       margin: 0 auto;
+      font-family: 'Chakra Petch';
     font-size: 8vw;
     width: auto;
     text-align: center;
