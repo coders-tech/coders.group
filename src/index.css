@@ -20,6 +20,7 @@ body {
   min-width: 300px;
 }
 
+
 nav {
   white-space: nowrap;
   background: #101b23;
@@ -56,10 +57,7 @@ nav ul li a.current {
 #section-2 {
   background-color: #ffffff;
 }
-#section-4{
-    display: flex;
-    height: 100vh;
-}
+
 .left {
   background-color: #101b23;
   width: 40%;

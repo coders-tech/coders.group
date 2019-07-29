@@ -1,0 +1,21 @@
+#section-4{
+    display: flex;
+    width: 100%;
+}
+
+.footer {
+  display: flex;
+  background: #101b23;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  align-content: center;
+  justify-content: space-around;
+}
+.footer ul {
+  list-style: none;
+  font-size: 20px
+}
+.footer ul li {
+  display: inline;
+}

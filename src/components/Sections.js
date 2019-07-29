@@ -2,6 +2,7 @@ import React from "react";
 import Header from './Header'
 import Skills from './Skills'
 import OurTeam from './OurTeam'
+import Footer from './Footer'
 
 const Sections = () => {
   return (
@@ -9,6 +10,7 @@ const Sections = () => {
       <Header />
       <Skills />
       <OurTeam />
+      <Footer />
     </div>
   );
 };

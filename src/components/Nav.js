@@ -17,6 +17,9 @@ const Nav = () => {
         <li>
           <a href="#section-3" className="navstyle"></a>
         </li>
+        <li>
+          <a href="#section-4" className="navstyle"></a>
+        </li>
       </ul>
     </nav>
   );
