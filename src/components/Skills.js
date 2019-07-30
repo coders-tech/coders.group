@@ -1,10 +1,10 @@
 import React from "react";
 
 import "../skills.css";
-import backend from "../img/backend2.png";
-import frontend from "../img/frontend.png";
-import uiux from "../img/uiux.png";
-import mobdev from "../img/mobdev.png";
+import backend from "../img/B.png";
+import frontend from "../img/frontend1.png";
+import uiux from "../img/uxui.png";
+import mobdev from "../img/mobiledev.png";
 
 import Frontend from './Frontend'
 import Backend from './Backend'
@@ -15,8 +15,6 @@ const Skills = () => {
   return (
     <div id="section-2">
       <div className="container1">
-      
-        <h1>Our Services</h1>
           <Frontend img={frontend}/>
           <Backend img={backend} />
           <Uiux img={uiux} />

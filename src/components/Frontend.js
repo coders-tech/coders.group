@@ -1,7 +1,8 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import useScrollPosition from 'use-scroll-position'
+// import useScrollPosition from 'use-scroll-position'
+import Ticker from 'react-ticker'
 
 
 
@@ -11,15 +12,13 @@ const Frontend = props => {
     threshold: 0.5
   });
 
-  const scrollPosition = useScrollPosition()
+  // const scrollPosition = useScrollPosition()
 
   return (
     <div>
-      <div className="frontendHeading">
-        <motion.h1 style={{x: 100}} animate={{x: scrollPosition / 2}}>frontend.</motion.h1>
-        <motion.h1 style={{x: 100}} animate={{x: scrollPosition / 2}}>frontend.</motion.h1>
-      </div>
-
+    <Ticker offset="2" speed={15}>
+      {() => <p className="frontendHeading">Our Services.&nbsp;&nbsp;</p>}
+    </Ticker>
     <div className="frontend">
       <motion.img
         style={{ opacity: 0 }}
