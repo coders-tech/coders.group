@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import useScrollPosition from 'use-scroll-position'
 
 
 
@@ -10,7 +11,15 @@ const Frontend = props => {
     threshold: 0.5
   });
 
+  const scrollPosition = useScrollPosition()
+
   return (
+    <div>
+      <div className="frontendHeading">
+        <motion.h1 style={{x: 100}} animate={{x: scrollPosition / 2}}>frontend.</motion.h1>
+        <motion.h1 style={{x: 100}} animate={{x: scrollPosition / 2}}>frontend.</motion.h1>
+      </div>
+
     <div className="frontend">
       <motion.img
         style={{ opacity: 0 }}
@@ -41,6 +50,7 @@ const Frontend = props => {
           <i className={`fab fa-js iconStyle`}  />
         </div>
       </motion.div>
+    </div>
     </div>
   );
 };

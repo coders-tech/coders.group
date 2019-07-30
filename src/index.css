@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
   overflow: -moz-scrollbars-none;
+  max-width: 100%;
 }
 ::-webkit-scrollbar {
   width: 0 !important;

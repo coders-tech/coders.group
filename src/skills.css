@@ -10,6 +10,17 @@
   grid-template-columns: repeat(2, minmax(200px, auto));
   padding: 5% 0;
 }
+
+.frontendHeading {
+  display: inline-flex;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 4em;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
 .backend {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, auto));

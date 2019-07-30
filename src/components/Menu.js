@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "../menu.css";
+import useScrollPosition from 'use-scroll-position'
+import {motion} from 'framer-motion'
 
 const Menu = () => {
   const [visibility, setVisibility] = useState("hidden");
@@ -9,9 +11,11 @@ const Menu = () => {
     visibility == "hidden" ? setVisibility("visible") : setVisibility("hidden");
     setStyle(style ? false : true);
   };
+  const scrollPosition = useScrollPosition()
+
   return (
     <div className="menu">
-      <div className="logo"><a href="#section-1">C/G</a></div>
+      {scrollPosition >= window.innerHeight && <motion.div style={{opacity: 0}} animate={{opacity: 1, duration: 1}}className="logo"><a href="#section-1">C/G</a></motion.div>}
       <div class="wrapper">
         <div class="navbar" onClick={handleClick} style={style ? {"border-radius":"50%", transition: "all 0.3s ease"} : {}} >
           <div
