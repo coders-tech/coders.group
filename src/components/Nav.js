@@ -8,14 +8,14 @@ const Nav = () => {
       </svg>
       <ul>
         <li>
-          <a href="#section-1" className="navstyle1">
+          <a href="#section-1" className="navstyle1">Home
           </a>
         </li>
         <li>
-          <a href="#section-2" className="navstyle"></a>
+          <a href="#section-2" className="navstyle">Services</a>
         </li>
         <li>
-          <a href="#section-3" className="navstyle"></a>
+          <a href="#section-3" className="navstyle">Team</a>
         </li>
       </ul>
     </nav>

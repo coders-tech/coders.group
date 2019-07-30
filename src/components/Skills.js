@@ -15,6 +15,7 @@ const Skills = () => {
   return (
     <div id="section-2">
       <div className="container1">
+      
         <h1>Our Services</h1>
           <Frontend img={frontend}/>
           <Backend img={backend} />
