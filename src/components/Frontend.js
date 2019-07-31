@@ -16,8 +16,8 @@ const Frontend = props => {
   return (
     <div>
       <div className="frontendHeading">
-        <motion.h1 style={{x: 100}} animate={{x: scrollPosition / 2}}>frontend.</motion.h1>
-        <motion.h1 style={{x: 100}} animate={{x: scrollPosition / 2}}>frontend.</motion.h1>
+        <motion.h1 style={{x: 100}} animate={{x: scrollPosition / 10}}>frontend.</motion.h1>
+        <motion.h1 style={{x: 100}} animate={{x: scrollPosition / 10}}>frontend.</motion.h1>
       </div>
 
     <div className="frontend">

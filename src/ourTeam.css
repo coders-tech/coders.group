@@ -12,20 +12,17 @@
      color: #3d8dac;
  }
  .ourteam{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, auto));
-    grid-column-gap: 20%;
-    margin: 0 10% 0 5% 
+    display: flex;
  }
  .profileImgD{
      width:280px;
      margin-top: -25%;
-     justify-self: left; 
+     justify-self: leftTeam; 
  }
  .profileImgN{
     width:280px;
     margin-top: -25%;
-    justify-self: right; 
+    justify-self: rightTeam; 
 }
  .Nikita{
      display: grid;
@@ -85,4 +82,36 @@
        margin-top: 1.25em;
    }
    
+}
+
+.leftTeam, .rightTeam{
+    float:leftTeam;
+}
+
+.leftTeam{
+    border-right: 3px solid white;
+    width: 45%;
+    height: 500px;
+    transition: width 1s ;
+}
+
+.rightTeam{
+    width: 50%;
+    height: 500px;
+    transition: width 1s;
+}
+
+.leftTeam:hover{
+    width: 70%;
+}
+
+.leftTeam:hover + .rightTeam{
+    width: 30%;
+}
+.rightTeam:hover{
+    width: 90%;
+}
+
+.rightTeam:hover + .leftTeam{
+    width: 10%;
 }

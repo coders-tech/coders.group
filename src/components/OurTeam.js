@@ -8,23 +8,22 @@ const OurTeam = () => {
       <div className="container3">
           <h1>Our Team</h1>
         <div className="ourteam">
-          <div className="Nikita">
-            <div className ="memberDescription">
-                    <h1>Nikita</h1>
-                    <p>senior web developer <br />
-                    Co-Founder of Coders.Group</p>
-            </div>
-            <img src="http://pngimg.com/uploads/mark_zuckerberg/mark_zuckerberg_PNG22.png" className="profileImgN" alt="Nikita" />
-          </div> 
-           <div className="Denis">
-          <img src="http://pngimg.com/uploads/mark_zuckerberg/mark_zuckerberg_PNG22.png"  className="profileImgD" alt="Denis" />
-          <div className ="memberDescription">
-          
-                <h1>Denis</h1>
-                <p>senior web developer <br />
-                Co-Founder of Coders.Group</p>
-            </div>
-          </div> 
+           <div className="leftTeam">
+             asfdasdfasdfasdfasdfsadf
+             asdfasdfasdfasdfasdfasdf
+             asdfasfasdfasdfasfdasdfasfd
+             asdfasdfasdfasdfasdfasdfasdf
+             asdfasdfasdfasdfasdfasdfasdf
+             asdfasdfasdfasdfasdfasdf
+           </div>
+           <div className="rightTeam">
+           asfdasdfasdfasdfasdfsadf
+             asdfasdfasdfasdfasdfasdf
+             asdfasfasdfasdfasfdasdfasfd
+             asdfasdfasdfasdfasdfasdfasdf
+             asdfasdfasdfasdfasdfasdfasdf
+             asdfasdfasdfasdfasdfasdf
+           </div>
         </div>
       </div>
     </div>
