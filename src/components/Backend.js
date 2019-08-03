@@ -9,10 +9,10 @@ const Backend = props => {
   const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
-    <div className="backend">
+    <div className="grid">
       <motion.div
         ref={ref}
-        className={`text skillleft`}
+        className={`textleft`}
         style={{ x: -100, opacity: 0 }}
         animate={inView && { opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
@@ -30,8 +30,7 @@ const Backend = props => {
           <i className={`fab fa-digital-ocean iconStyle`} />
         </div>
       </motion.div>
-      <motion.img
-        src={props.img}
+      <motion.div
         ref={ref}
         alt="Backend"
         className={`skillimg rightimg`}

@@ -2,7 +2,7 @@ import React from "react";
 
 import "../skills.css";
 import backend from "../img/B.png";
-import frontend from "../img/frontend1.png";
+import frontend from "../img/fr.jpeg";
 import uiux from "../img/uxui.png";
 import mobdev from "../img/mobiledev.png";
 

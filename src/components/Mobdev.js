@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 const Mobdev = props => {
   const [ref, inView] = useInView({ triggerOnce: true });
   return (
-    <div className="mobapp">
+    <div className="grid">
       <motion.div
         ref={ref}
-        className={`text skillleft`}
+        className={`textleft`}
         style={{ x: -100 }}
         animate={inView && { x: 0 }}
         transition={{ duration: 1 }}
@@ -27,10 +27,9 @@ const Mobdev = props => {
           <i className={`fab fa-react iconStyle`} />
         </div>
       </motion.div>
-      <motion.img
-        src={props.img}
+      <motion.div
         alt="Mobile Development"
-        className={`skillimg rightimg`}
+        className={`rightimg`}
         ref={ref}
         style={{ opacity: 0 }}
         animate={inView && { opacity: 1 }}

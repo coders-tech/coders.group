@@ -7,12 +7,11 @@ const Uiux = props => {
   const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
-    <div className="uiux">
-      <motion.img
-        src={props.img}
+    <div className="grid">
+      <motion.div
         alt="UI/UX"
         ref={ref}
-        className={`skillimg leftimg`}
+        className={`imgleft`}
         style={{ opacity: 0 }}
         animate={inView && { opacity: 1 }}
         transition={{ duration: 1 }}
@@ -21,7 +20,7 @@ const Uiux = props => {
         style={{ x: -100, opacity: 0 }}
         animate={inView && { opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className={`text skillright`}
+        className={`text`}
       >
         <h2>UI/UX</h2>
         <p>
