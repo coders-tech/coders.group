@@ -1,6 +1,6 @@
 .container1 {
-  display: grid;
-
+  display: flex;
+  flex-direction: column;
   background: #101b23;
   color: white;
   font-size: 1.3em;
@@ -11,14 +11,8 @@
   grid-template-columns: 10% 20% 20% 20% 20% 10%;
   grid-template-rows: [row1-start] 20% [row1-end] 20%  [third-line]  40% [additional] 20% [last-line];
   height: 100vh;
+  padding: 0;
 }
-.frontend {
-  display: grid;
-  grid-template-columns: 10% 20% 20% 20% 20% 10%;
-  grid-template-rows: [row1-start] 20% [row1-end] 20%  [third-line]  40% [additional] 20% [last-line];
-  height: 100vh;
-}
-
 .frontendHeading {
   font-size: 210px;
   padding: 0;
@@ -26,23 +20,6 @@
 }
 
 
-.backend {
-  display: grid;
-  grid-template-columns: 10% 20% 20% 20% 20% 10%;
-  grid-template-rows: [row1-start] 20% [row1-end] 20%  [third-line]  40% [additional] 20% [last-line];
-  padding: 5% 0;
-  height: 100vh;
-}
-.uiux {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, auto));
-  padding: 5% 0;
-}
-.mobapp {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, auto));
-  padding: 5% 0;
-}
 
 .imgleft {
   background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
@@ -57,6 +34,7 @@
   width: 100%;
   height: auto;
   margin: 0 auto; 
+  z-index: 99;
 }
 
 .rightimg {
@@ -99,14 +77,6 @@
   padding: 0 30% 0 20%;
   text-align: right;
 }
-.skillleft {
-  padding: 0 30% 0 20%;
-  text-align: right;
-}
-.skillright {
-  padding: 0 20% 0 30%;
-  text-align: left;
-}
 h2 {
   color: #48c4f5;
 }
@@ -133,53 +103,12 @@ h1 {
   }
 }
 @media all and (max-width: 784px){
-  .skillimg {
-    width: 300px;
-    padding-top: 20%;
-    height: auto;
-    margin: 0 auto;
-  }
-  .frontend {
+  .grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .backend {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-  .uiux {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .mobapp {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-  .skillleft {
-    padding: 0;
-    text-align: center;
-    font-size: 0.9em;
-  }
-  .skillright {
-    padding: 0;
-    text-align: center;
-    font-size: 0.9em;
-  }
-  .rightimg {
-    padding:0;
-    margin: 0 auto
-  }
-  .leftimg {
-    padding: 5% 0;
-    margin: 0 auto
-  }
-  .gridStyle{
-    display: flex;
-    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   .iconStyle{
     padding: 0 20px;
@@ -189,48 +118,18 @@ h1 {
   }
 }
 @media all and (max-width: 519px) {
-  .skillimg {
-    width: 250px;
-    padding-top: 25%;
-    height: auto;
+  .text, .textleft {
+    padding: 0 20%;
+    text-align: left;
+    width: 50%;
   }
-  .frontend {
+  .grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .backend {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-  .uiux {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .mobapp {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-  .skillleft {
-    padding: 0;
     text-align: center;
     font-size: 0.8em;
-  }
-  .skillright {
-    padding: 0;
-    text-align: center;
-    font-size: 0.8em;
-  }
-  .rightimg {
-    padding:0;
-    margin: 0 auto
-  }
-  .leftimg {
-    padding: 5% 0;
-    margin: 0 auto
+    width: 100vw;
   }
   .iconStyle{
     font-size: 1.5em;
