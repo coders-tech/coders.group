@@ -17,7 +17,6 @@ const Backend = props => {
         animate={inView && { opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2>Backend</h2>
         <p>
           To ensure that your audience gets the best out of your organization,
           you need to think beyond design. At coders.group we develop scalable
@@ -30,6 +29,7 @@ const Backend = props => {
           <i className={`fab fa-digital-ocean iconStyle`} />
         </div>
       </motion.div>
+      <h2 className='titleLeft'>Backend</h2>
       <motion.div
         ref={ref}
         alt="Backend"

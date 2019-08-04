@@ -2,7 +2,6 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 // import useScrollPosition from 'use-scroll-position'
-import Ticker from 'react-ticker'
 
 
 
@@ -26,13 +25,13 @@ const Frontend = props => {
         ref={ref}
         className={`imgleft`}
       />
+      <h2 className='titleRight'>Frontend</h2>
       <motion.div
         style={{ x: -100, opacity: 0 }}
         animate={inView && { opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className={`text`}
       >
-        <h2>Frontend</h2>
         <p>
           Your website is ofthen the first experience someone will have with
           your organization. At coders.group we make sure to make the best first

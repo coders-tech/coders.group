@@ -16,14 +16,14 @@ const Uiux = props => {
         animate={inView && { opacity: 1 }}
         transition={{ duration: 1 }}
       />
+      <h2 className='titleRight'>UI / UX</h2>
       <motion.div
         style={{ x: -100, opacity: 0 }}
         animate={inView && { opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className={`text`}
       >
-        <h2>UI/UX</h2>
-        <p>
+          <p>
           We create UI/UX design for digital products with one goal in mind:
           valuable, memorable, seamless user experience, exceeding customers
           expectations

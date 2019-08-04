@@ -1,6 +1,5 @@
 import React from "react";
 import "../ourTeam.css";
-import Ticker from 'react-ticker'
 const OurTeam = () => {
   return (
     <div id="section-3">

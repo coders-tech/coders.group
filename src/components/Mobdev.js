@@ -15,7 +15,6 @@ const Mobdev = props => {
         animate={inView && { x: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2>Mobile Development</h2>
         <p>
           At coders.group we focus on providing quality products. We create
           cross-platform applications, accessible on any device.
@@ -27,6 +26,7 @@ const Mobdev = props => {
           <i className={`fab fa-react iconStyle`} />
         </div>
       </motion.div>
+      <h2 className='titleLeft'>Mobile</h2>
       <motion.div
         alt="Mobile Development"
         className={`rightimg`}
