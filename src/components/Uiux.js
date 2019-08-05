@@ -12,13 +12,13 @@ const Uiux = props => {
         alt="UI/UX"
         ref={ref}
         className={`imgleft`}
-        style={{ opacity: 0 }}
-        animate={inView && { opacity: 1 }}
+        style={{ opacity: 0, y: -200}}
+        animate={inView && { opacity: 1, y: 0}}
         transition={{ duration: 1 }}
       />
       <h2 className='titleRight'>UI / UX</h2>
       <motion.div
-        style={{ x: -100, opacity: 0 }}
+        style={{ x: -100, opacity: 0}}
         animate={inView && { opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className={`text`}

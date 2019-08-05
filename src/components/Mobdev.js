@@ -31,8 +31,8 @@ const Mobdev = props => {
         alt="Mobile Development"
         className={`rightimg`}
         ref={ref}
-        style={{ opacity: 0 }}
-        animate={inView && { opacity: 1 }}
+        style={{ opacity: 0, y: -200 }}
+        animate={inView && { opacity: 1, y: 0 }}
         transition={{ duration: 2 }}
       />
     </div>
