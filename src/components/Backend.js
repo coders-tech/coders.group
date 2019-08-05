@@ -33,7 +33,7 @@ const Backend = props => {
       <motion.div
         ref={ref}
         alt="Backend"
-        className={`rightimg`}
+        className={`rightimg backend`}
         style={{ opacity: 0 }}
         animate={inView && { opacity: 1 }}
         transition={{ duration: 2 }}

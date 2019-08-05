@@ -29,7 +29,7 @@ const Mobdev = props => {
       <h2 className='titleLeft'>Mobile</h2>
       <motion.div
         alt="Mobile Development"
-        className={`rightimg`}
+        className={`rightimg mobile`}
         ref={ref}
         style={{ opacity: 0 }}
         animate={inView && { opacity: 1 }}
