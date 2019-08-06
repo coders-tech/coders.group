@@ -11,7 +11,7 @@ const Uiux = props => {
       <motion.div
         alt="UI/UX"
         ref={ref}
-        className={`imgleft`}
+        className={`imgleft uiux`}
         style={{ opacity: 0, y: -200}}
         animate={inView && { opacity: 1, y: 0}}
         transition={{ duration: 1 }}

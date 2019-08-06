@@ -6,20 +6,14 @@ const OurTeam = () => {
       <div className="container3">
         <div className="ourteam">
            <div className="leftTeam">
-             asfdasdfasdfasdfasdfsadf
-             asdfasdfasdfasdfasdfasdf
-             asdfasfasdfasdfasfdasdfasfd
-             asdfasdfasdfasdfasdfasdfasdf
-             asdfasdfasdfasdfasdfasdfasdf
-             asdfasdfasdfasdfasdfasdf
+             <h3 className='nameL'>Nikita</h3>
+             <div className='photoL'></div>
+             <div className='rotatedL'></div>
            </div>
            <div className="rightTeam">
-           asfdasdfasdfasdfasdfsadf
-             asdfasdfasdfasdfasdfasdf
-             asdfasfasdfasdfasfdasdfasfd
-             asdfasdfasdfasdfasdfasdfasdf
-             asdfasdfasdfasdfasdfasdfasdf
-             asdfasdfasdfasdfasdfasdf
+             <h3 className='nameR'>Denis</h3>
+             <div className='photoR'></div>
+             <div className='rotatedR'></div>
            </div>
         </div>
       </div>
