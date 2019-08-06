@@ -16,7 +16,7 @@ const Uiux = props => {
         animate={inView && { opacity: 1, y: 0}}
         transition={{ duration: 1 }}
       />
-      <h2 className='titleRight'>UI / UX</h2>
+      <h2 className='titleRight'>UI/UX</h2>
       <motion.div
         style={{ x: -100, opacity: 0}}
         animate={inView && { opacity: 1, x: 0 }}
