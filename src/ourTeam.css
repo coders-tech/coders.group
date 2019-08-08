@@ -1,159 +1,97 @@
-.container3{
-    display: flex;
-    flex-direction: column;
-    background: #101b23;
-    color: white;
-    font-size: 1.3em;
-    padding: 0 0 17% 0;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
- }
-
- .container3 h1{
-     margin: 0 auto;
-     color: #3d8dac;
- }
- .ourteam{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
- }
-
- .leftTeam {
-     height: 100vh;
-     width: 50vw;
-    display: grid;
-    grid-template-columns: 10% 20% 20% 20% 20% 10%;
-    grid-template-rows: 10% 20% 20% 20% 20% 10%;
- }
- .rightTeam {
-    height: 100vh;
-    width: 50vw;
-    display: grid;
-    grid-template-columns: 10% 20% 20% 20% 20% 10%;
-    grid-template-rows: 10% 20% 20% 20% 20% 10%;
- }
-
-.photoL{
-    background: white;
-    grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  z-index: 2;
+.container3 {
+  display: flex;
+  flex-direction: column;
+  background: #101b23;
+  color: white;
+  font-size: 1.3em;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.photoR{
-    background: white;
-    grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  z-index: 2;
+
+.container3 h1 {
+  margin: 0 auto;
+  color: #3d8dac;
 }
-.rotatedL {
-    background: rgba(0, 255, 255, 0.432);
-    grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  transform: rotate(45deg);
-  z-index: 1;
+.ourteam {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
-.rotatedR {
-    background: rgba(0, 255, 255, 0.432);
-    grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  transform: rotate(45deg);
-  z-index: 1;
+.gridContainerTeam {
+  display: grid;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-rows: repeat(6, minmax(130px, auto));
+  padding: 0 5% 0 0;
 }
-.nameL {
-    grid-column-start: 3;
+
+.headerTeam {
+  grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
-  grid-row-end: 5;
-  transform: rotate(45deg);
-  font-size: 2.5em;
+  grid-row-end: 3;
+  justify-self: center;
+  z-index: 12;
+  align-self: end;
 }
-.nameR {
-    grid-column-start: 2;
+.headerTeam h1 {
+  margin-bottom: -10%;
+  font-size: 50px;
+  color: white;
+  background: #101b23e7;
+  padding: 0 10px;
+}
+.imageTeam {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background-image: url("https://www.wallpaperflare.com/static/329/351/608/silicon-valley-hbo-men-s-wallpaper.jpg");
+  background-color: #3699c08f;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.leftTeam {
+  grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 5;
-  transform: rotate(45deg);
-  font-size: 2.5em;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background: #101b23e7;
+  z-index: 11;
+  opacity: 0;
+  transition-duration: 0.3s;
+  text-align: center;
+  padding: 10% 5% 0 5%;
 }
-
- .profileImgD{
-     width:280px;
-     margin-top: -25%;
-     justify-self: leftTeam; 
- }
- .profileImgN{
-    width:280px;
-    margin-top: -25%;
-    justify-self: rightTeam; 
+.rightTeam {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background: #101b23e7;
+  z-index: 11;
+  opacity: 0;
+  transition-duration: 0.3s;
+  text-align: center;
+  padding: 10% 5% 0 5%;
 }
- .Nikita{
-     display: grid;
-     grid-template-columns: repeat(2, minmax(0, auto));
-     border: 10px solid white;
- }
- .Denis{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, auto));
-    border: 10px solid white;
+.leftTeam:hover {
+  opacity: 1;
 }
-.memberDescription{
-    justify-self: center;
-    z-index: 1;
-    
+.rightTeam:hover {
+  opacity: 1;
 }
-.Nikita .memberDescription{
-    padding: 0 0 0 10px
+@media all and (max-width: 1070px) {
+  .gridContainerTeam {
+    padding: 0 5% 0 5%;
+  }
+  .headerTeam {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
-@media (max-width: 1070px) {
-    .profileImgD{
-        width:200px;
-        margin-top:1.25em;
-    }
-    .profileImgN{
-       width:200px;
-       margin-top: 1.25em;
-   }
-   
-
+@media all and (max-width: 784px) {
 }
-@media all and (max-width: 784px){
-   
-    .ourteam{
-        display: flex;
-        flex-direction: column;
-     }
-     .Nikita{
-         margin: 0 0 20px 0;
-     }
-     .profileImgD{
-        width:270px;
-        margin-top:1.25em;
-    }
-    .profileImgN{
-       width:270px;
-       margin-top: 1.25em;
-   }
+@media all and (max-width: 519px) {
 }
-@media all and (max-width: 519px){
-    .profileImgD{
-        width:200px;
-        margin-top:1.25em;
-    }
-    .profileImgN{
-       width:200px;
-       margin-top: 1.25em;
-   }
-   
-}
-

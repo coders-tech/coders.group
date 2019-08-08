@@ -5,16 +5,30 @@ const OurTeam = () => {
     <div id="section-3">
       <div className="container3">
         <div className="ourteam">
-           <div className="leftTeam">
-             <h3 className='nameL'>Nikita</h3>
-             <div className='photoL'></div>
-             <div className='rotatedL'></div>
-           </div>
-           <div className="rightTeam">
-             <h3 className='nameR'>Denis</h3>
-             <div className='photoR'></div>
-             <div className='rotatedR'></div>
-           </div>
+          <div className="gridContainerTeam">
+            <div className="headerTeam">
+              <h1>Our Team</h1>
+            </div>
+            <div className="imageTeam" />
+            <div className="leftTeam">
+              <h2>I'm left</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                alias ullam ducimus dolorem qui ut provident mollitia
+                asperiores. Harum dolores animi quo esse perferendis minus
+                consequuntur dolorum temporibus officiis quam!
+              </p>
+            </div>
+            <div className="rightTeam">
+              <h2>I'm right</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                alias ullam ducimus dolorem qui ut provident mollitia
+                asperiores. Harum dolores animi quo esse perferendis minus
+                consequuntur dolorum temporibus officiis quam!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
