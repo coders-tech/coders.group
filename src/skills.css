@@ -9,7 +9,7 @@
 .grid {
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% 10%;
-  grid-template-rows: 20% 20%  40% 20% ;
+  grid-template-rows: 20% 20% 40% 20%;
   height: 100vh;
   padding: 0;
 }
@@ -18,8 +18,6 @@
   padding: 0;
   font-family: "Chakra Petch";
 }
-
-
 
 .imgleft {
   background-image: url("https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
@@ -33,7 +31,7 @@
   grid-row-end: 4;
   width: 100%;
   height: auto;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .rightimg {
@@ -48,20 +46,21 @@
   grid-row-end: 4;
   width: 100%;
   height: auto;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .text {
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 3;
-  grid-row-end:   5;
+  grid-row-end: 5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 19;
-  background: #101b2380;
-  padding: 0 20% 0 30%;
+  background: #101b23e7;
+  padding: 10% 20% 0 10%;
   text-align: left;
+  font-size: 35px;
 }
 .textleft {
   grid-column-start: 2;
@@ -72,11 +71,12 @@
   flex-direction: column;
   justify-content: center;
   z-index: 19;
-  background: #101b2380;
-  padding: 0 30% 0 20%;
+  background: #101b23e7;
+  padding: 0 10% 0 20%;
+  font-size: 35px;
   text-align: left;
 }
-.titleRight{
+.titleRight {
   transform: rotate(90deg);
   font-size: 3em;
   grid-column-start: 4;
@@ -85,7 +85,7 @@
   grid-row-end: 4;
   z-index: 20;
 }
-.titleLeft{
+.titleLeft {
   font-size: 3em;
   grid-column-start: 2;
   grid-column-end: 4;
@@ -100,15 +100,15 @@ h1 {
   padding: 5% 5% 0 0;
   margin: 0 auto;
 }
-.gridStyle{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+.gridStyle {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
 }
-.iconStyle{
-    font-size: 2em;
+.iconStyle {
+  font-size: 2em;
 }
 
-.backend{
+.backend {
   background-image: url("https://images.unsplash.com/photo-1493119508027-2b584f234d6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
   background-size: cover;
   background-repeat: no-repeat;
@@ -123,8 +123,15 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-@media all and (max-width: 1070px) {
+@media all and (max-width: 1336px) {
+  .text {
+    font-size: 30px;
+  }
+  .textleft {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 1070px){
   .skillimg {
     width: 350px;
     height: auto;
@@ -132,60 +139,84 @@ h1 {
   .frontendHeading {
     font-size: 100px;
   }
-  .container1{
+  .container1 {
     font-size: 1.2em;
-
   }
-  .titleRight{
+  .titleRight {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
   }
-  
+  .text {
+    font-size: 30px;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding-top: 20%;
+    
+  }
+  .textleft {
+    font-size: 30px;
+    grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+    padding-top: 20%;
+    
+  }
+
 }
-@media all and (max-width: 784px){
-  
-  .iconStyle{
+@media all and (max-width: 784px) {
+  .iconStyle {
     padding: 0 10px;
   }
   .frontendHeading {
     font-size: 70px;
   }
-  .titleRight{
+  .titleRight {
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 3;
   }
-  .iconStyle{
+  .iconStyle {
     font-size: 1.5em;
-}
+  }
+  .text {
+    font-size: 20px;
+    padding: 0 20%;
+  }
+  .textleft {
+    font-size: 20px;
+    padding: 0 20%;
+  }
 }
 @media all and (max-width: 519px) {
-  .container1{
+  .container1 {
     font-size: 0.9em;
-
   }
-  .text, .textleft {
+  .text,
+  .textleft {
     padding: 0 20%;
     text-align: left;
     width: 50%;
   }
   .text {
-  grid-column-start: 3;
-  grid-column-end: 6;
-  grid-row-start: 3;
-  grid-row-end:   5;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
   }
-  .iconStyle{
+  .iconStyle {
     font-size: 1.3em;
     padding: 0.5em;
   }
   .frontendHeading {
     font-size: 50px;
   }
-  .titleRight{
+  .titleRight {
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 2;
@@ -195,7 +226,21 @@ h1 {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 3;
-    grid-row-end: 5;}
-
+    grid-row-end: 5;
+    font-size: 16px;
+    padding: 0 20%;
+  }
+  .text {
+    font-size: 16px;
+    padding: 0 20%;
+  }
+   
 }
-
+@media all and (max-width: 370px) {
+  .text{
+    font-size:13px;
+  }
+  .textleft{
+    font-size: 13px;
+  }
+}
