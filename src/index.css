@@ -131,11 +131,15 @@ nav ul li a.current {
   -o-transform: rotate(-90deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-.coders {
-  font-size: 21px;
-}
+
 .TextOnTablets {
   display: none;
+}
+
+@media all and (max-height: 800) and (orientation: landscape){
+  .coders{
+    font-size: 12px !important;
+  }
 }
 
 @media (max-width: 1070px) {
@@ -189,3 +193,4 @@ nav ul li a.current {
     color: white;
   }
 }
+

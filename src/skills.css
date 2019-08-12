@@ -123,7 +123,41 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media all and (max-width: 1336px) {
+@media all and (max-height: 420px) and (orientation: landscape) {
+  .text{
+    font-size:15px;
+  }
+  .textleft{
+    font-size: 15px;
+  }
+  .titleLeft{
+    grid-row-start: 1;
+    font-size: 2em;
+  }
+  .titleRight{
+    font-size: 2em;
+    grid-column-start: 4;
+    grid-row-start: 1;
+  }
+}
+@media all and (max-height: 320px) and (orientation: landscape) {
+  .text{
+    font-size:12px;
+  }
+  .textleft{
+    font-size: 12px;
+  }
+  .titleLeft{
+    grid-row-start: 1;
+    font-size: 1.5em;
+  }
+  .titleRight{
+    font-size: 1.5em;
+    grid-column-start: 4;
+    grid-row-start: 1;
+  }
+}
+@media screen and (max-width: 1336px) and (orientation: portrait){
   .text {
     font-size: 30px;
   }
@@ -131,7 +165,7 @@ h1 {
     font-size: 30px;
   }
 }
-@media all and (max-width: 1070px){
+@media screen and (max-width: 1070px) and (orientation: portrait){
   .skillimg {
     width: 350px;
     height: auto;
@@ -168,7 +202,7 @@ h1 {
   }
 
 }
-@media all and (max-width: 784px) {
+@media screen and (max-width: 784px) and (orientation: portrait) {
   .iconStyle {
     padding: 0 10px;
   }
@@ -193,7 +227,7 @@ h1 {
     padding: 0 20%;
   }
 }
-@media all and (max-width: 519px) {
+@media screen and (max-width: 519px) {
   .container1 {
     font-size: 0.9em;
   }
@@ -236,11 +270,11 @@ h1 {
   }
    
 }
-@media all and (max-width: 370px) {
+@media screen and (max-width: 370px) {
   .text{
-    font-size:13px;
+    font-size:14px;
   }
   .textleft{
-    font-size: 13px;
+    font-size: 14px;
   }
 }

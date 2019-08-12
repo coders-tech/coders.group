@@ -33,7 +33,7 @@ const Frontend = props => {
         className={`text`}
       >
         <p>
-          Your website is ofthen the first experience someone will have with
+          Your website is often the first experience someone will have with
           your organization. At coders.group we make sure to make the best first
           impression, with engaging, dynamic website design using the latest
           technologies
