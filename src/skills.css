@@ -60,7 +60,7 @@
   background: #101b23e7;
   padding: 10% 20% 0 10%;
   text-align: left;
-  font-size: 35px;
+  font-size: 120%;
 }
 .textleft {
   grid-column-start: 2;
@@ -73,7 +73,7 @@
   z-index: 19;
   background: #101b23e7;
   padding: 0 10% 0 20%;
-  font-size: 35px;
+  font-size: 120%;
   text-align: left;
 }
 .titleRight {

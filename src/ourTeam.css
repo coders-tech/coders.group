@@ -46,9 +46,7 @@
   grid-column-end: 7;
   grid-row-start: 3;
   grid-row-end: 6;
-  background-image: url("https://www.wallpaperflare.com/static/329/351/608/silicon-valley-hbo-men-s-wallpaper.jpg");
-  background-color: #3699c08f;
-  background-blend-mode: multiply;
+  background-image: url("https://i.imgur.com/vjQdewL.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -76,6 +74,25 @@
   text-align: center;
   padding: 10% 5% 0 5%;
 }
+.leftTeamImg {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background: #101b23e7;
+  z-index: 11;
+  background-image: url("https://i.imgur.com/azpg3J4.png");
+  background-size: cover;
+  transition-duration: 0.3s;
+}
+.rightTeamImg {
+  display: none;
+  background: #101b23e7;
+  z-index: 11;
+  background-image: url("https://i.imgur.com/5OF9a3a.png");
+  transition-duration: 0.3s;
+  background-size: cover;
+}
 .leftTeam:hover {
   opacity: 1;
 }
@@ -90,8 +107,17 @@
     grid-row-start: 2;
     grid-row-end: 3;
   }
+
 }
 @media all and (max-width: 784px) {
+  .rightTeamImg{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-size: cover;
+  }
 }
 @media all and (max-width: 519px) {
 }

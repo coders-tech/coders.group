@@ -10,6 +10,7 @@ const OurTeam = () => {
               <h1>Our Team</h1>
             </div>
             <div className="imageTeam" />
+            <div className="leftTeamImg" />
             <div className="leftTeam">
               <h2>I'm left</h2>
               <p>
@@ -19,6 +20,7 @@ const OurTeam = () => {
                 consequuntur dolorum temporibus officiis quam!
               </p>
             </div>
+            <div className="rightTeamImg" />
             <div className="rightTeam">
               <h2>I'm right</h2>
               <p>
