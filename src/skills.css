@@ -5,6 +5,31 @@
   color: white;
   font-size: 1.3em;
 }
+.container1 h1{
+  margin-top: 10%;
+  margin-bottom: 0;
+  font-size: 2em;
+}
+
+.parallaxParagraph {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #101b23;
+  font-size: 5em;
+  color: white;
+}
+.parallaxParagraph p{
+  padding: 10%;
+}
+.parallaxParagraph span:nth-child(1){
+  background-color: #48c4f5;
+  color: #101b23;
+}
+.underline{
+  border-bottom: 8px #48c4f5 solid;
+  text-decoration-color: #48c4f5;
+}
 
 .grid {
   display: grid;
@@ -139,6 +164,12 @@ h1 {
     grid-column-start: 4;
     grid-row-start: 1;
   }
+  .parallaxParagraph{
+    font-size: 2em;
+  }
+  h1{
+    font-size: 2em;
+  }
 }
 @media all and (max-height: 320px) and (orientation: landscape) {
   .text{
@@ -156,6 +187,12 @@ h1 {
     grid-column-start: 4;
     grid-row-start: 1;
   }
+  .parallaxParagraph{
+    font-size: 2em;
+  }
+  h1{
+    font-size: 1em;
+  }
 }
 @media screen and (max-width: 1336px) and (orientation: portrait){
   .text {
@@ -163,6 +200,12 @@ h1 {
   }
   .textleft {
     font-size: 30px;
+  }
+  .parallaxParagraph{
+    font-size: 2em;
+  }
+  h1{
+    font-size: 2em;
   }
 }
 @media screen and (max-width: 1070px) and (orientation: portrait){
@@ -200,6 +243,12 @@ h1 {
     padding-top: 20%;
     
   }
+  .parallaxParagraph{
+    font-size: 2em;
+  }
+  h1{
+    font-size: 2em;
+  }
 
 }
 @media screen and (max-width: 784px) and (orientation: portrait) {
@@ -225,6 +274,12 @@ h1 {
   .textleft {
     font-size: 20px;
     padding: 0 20%;
+  }
+  .parallaxParagraph{
+    font-size: 2em;
+  }
+  h1{
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 519px) {
@@ -268,6 +323,12 @@ h1 {
     font-size: 16px;
     padding: 0 20%;
   }
+  .parallaxParagraph{
+    font-size: 2em;
+  }
+  h1{
+    font-size: 2em;
+  }
    
 }
 @media screen and (max-width: 370px) {
@@ -276,5 +337,12 @@ h1 {
   }
   .textleft{
     font-size: 14px;
+  }
+  .parallaxParagraph{
+    font-size: 2em;
+    height: 70%;
+  }
+  h1{
+    font-size: 1em;
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "../menu.css";
 import useScrollPosition from 'use-scroll-position'
 import {motion} from 'framer-motion'
@@ -8,7 +8,7 @@ const Menu = () => {
   const [visibility, setVisibility] = useState("hidden");
   const [style, setStyle] = useState(false);
   const handleClick = () => {
-    visibility == "hidden" ? setVisibility("visible") : setVisibility("hidden");
+    visibility === "hidden" ? setVisibility("visible") : setVisibility("hidden");
     setStyle(style ? false : true);
   };
   const scrollPosition = useScrollPosition()
@@ -16,10 +16,10 @@ const Menu = () => {
   return (
     <div className="menu">
       {scrollPosition >= window.innerHeight && <motion.div style={{opacity: 0}} animate={{opacity: 1, duration: 1}}className="logo"><a href="#section-1">C/G</a></motion.div>}
-      <div class="wrapper">
-        <div class="navbar" onClick={handleClick} style={style ? {"border-radius":"50%", transition: "all 0.3s ease"} : {}} >
+      <div className="wrapper">
+        <div className="navbar" onClick={handleClick} style={style ? {"border-radius":"50%", transition: "all 0.3s ease"} : {}} >
           <div
-            class="first"
+            className="first"
             style={
               style
                 ? {
@@ -30,10 +30,10 @@ const Menu = () => {
             }
           />
           <div
-            class="second"
+            className="second"
             style={style ? { opacity: 0, transition: "all 0.2s ease" } : {}}
           />
-          <div class="third" style={style ? {transform: "translateY(-15px) rotate(-45deg)",transition: "all 0.5s ease"} : {}} />
+          <div className="third" style={style ? {transform: "translateY(-15px) rotate(-45deg)",transition: "all 0.5s ease"} : {}} />
         </div>
         <div className='menuContent' style={style ? {visibility: 'visible', opacity: 1, transition: "all 1s ease"} : {visibility: 'hidden', opacity: 0}}>
             <div className="menuContentlist">

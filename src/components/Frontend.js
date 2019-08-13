@@ -1,8 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import useScrollPosition from 'use-scroll-position'
-
 
 
 const Frontend = props => {
@@ -11,11 +9,8 @@ const Frontend = props => {
     threshold: 0.5
   });
 
-  const scrollPosition = useScrollPosition()
-
   return (
     <div>
-      <h1></h1>
     <div className="grid">
       <motion.div
         style={{ opacity: 0, y: -200}}

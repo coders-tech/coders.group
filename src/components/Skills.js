@@ -10,10 +10,12 @@ import Frontend from './Frontend'
 import Backend from './Backend'
 import Uiux from './Uiux'
 import Mobdev from './Mobdev'
+import ParallaxParagraph from './parallaxParagraph'
 
 const Skills = () => {
   return (
     <div id="section-2">
+      <ParallaxParagraph />
       <div className="container1">
           <Frontend img={frontend}/>
           <Backend img={backend} />

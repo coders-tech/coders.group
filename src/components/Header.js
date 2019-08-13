@@ -13,11 +13,6 @@ const Header = () => {
         >
           CODERS/<span id="logo">GROUP</span>
         </motion.h1>
-
-        <p className="animated fadeIn delay-1s coders">
-          At coders.group we combine technology, creativity and strategy to
-          transform your ideas into products.
-        </p>
       </div>
       <div className="right"> 
       <div className="TextOnTablets">
@@ -33,7 +28,8 @@ const Header = () => {
           At coders.group we combine technology, creativity and strategy to
           transform your ideas into products.
         </p>
-      </div></div>
+      </div>
+      </div>
       <Menu />
     </div>
   );
