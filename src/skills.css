@@ -16,8 +16,9 @@
   display: flex;
   flex-direction: column;
   background: #101b23;
-  font-size: 5em;
+  font-size: 6em;
   color: white;
+  justify-content: center;
 }
 .parallaxParagraph p{
   padding: 10%;
@@ -329,14 +330,18 @@ h1 {
   h1{
     font-size: 2em;
   }
+  .underline{
+    border-bottom: 5px #48c4f5 solid;
+    text-decoration-color: #48c4f5;
+  }
    
 }
 @media screen and (max-width: 370px) {
   .text{
-    font-size:14px;
+    font-size:15px;
   }
   .textleft{
-    font-size: 14px;
+    font-size: 15px;
   }
   .parallaxParagraph{
     font-size: 2em;
