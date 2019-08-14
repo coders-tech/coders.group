@@ -1,123 +1,235 @@
 .container3 {
-  display: flex;
-  flex-direction: column;
-  background: #101b23;
-  color: white;
-  font-size: 1.3em;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: repeat(5, minmax(130px, auto));
+  padding: 5% 5% 10% 0;
 }
 
 .container3 h1 {
   margin: 0 auto;
   color: #3d8dac;
 }
-.ourteam {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-.gridContainerTeam {
-  display: grid;
-  grid-template-columns: 10% 20% 20% 20% 20% 10%;
-  grid-template-rows: repeat(6, minmax(130px, auto));
-  padding: 0 5% 0 0;
-}
-
-.headerTeam {
-  grid-column-start: 3;
-  grid-column-end: 5;
+.nameHolderNOT {
+  grid-column-start: 1;
+  grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 3;
-  justify-self: center;
-  z-index: 12;
-  align-self: end;
+  color: #48c4f5;
+  transform: rotate(-90deg);
+  font-size: 5em;
 }
-.headerTeam h1 {
-  margin-bottom: -10%;
-  font-size: 50px;
-  color: white;
-  background: #101b23e7;
-  padding: 0 10px;
+.nameHolderDOT {
+  grid-column-start: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  color: #48c4f5;
+  transform: rotate(-90deg);
+  font-size: 5em;
 }
-.imageTeam {
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 3;
+.imageHolderOT{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
   grid-row-end: 6;
-  background-image: url("https://i.imgur.com/vjQdewL.png");
+  background: url("https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #101b23e7;
+  background-blend-mode: multiply;
 }
-.leftTeam {
-  grid-column-start: 1;
-  grid-column-end: 4;
+.facesHolderOT{
+  grid-column-start: 2;
+  grid-column-end:4;
   grid-row-start: 3;
   grid-row-end: 6;
-  background: #101b23e7;
-  z-index: 11;
-  opacity: 0;
-  transition-duration: 0.3s;
-  text-align: center;
-  padding: 10% 5% 0 5%;
+  padding: 0 30px;
+  justify-self: center;
 }
-.rightTeam {
+.descriptionHolderNOT{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  color: #48c4f5;
+  justify-self: center;
+}
+.descriptionHolderDOT{
   grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 3;
-  grid-row-end: 6;
-  background: #101b23e7;
-  z-index: 11;
-  opacity: 0;
-  transition-duration: 0.3s;
-  text-align: center;
-  padding: 10% 5% 0 5%;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  color: #48c4f5;
+  justify-self: center;
 }
-.leftTeamImg {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 6;
-  background: #101b23e7;
-  z-index: 11;
-  background-image: url("https://i.imgur.com/azpg3J4.png");
-  background-size: cover;
-  transition-duration: 0.3s;
-}
-.rightTeamImg {
-  display: none;
-  background: #101b23e7;
-  z-index: 11;
-  background-image: url("https://i.imgur.com/5OF9a3a.png");
-  transition-duration: 0.3s;
-  background-size: cover;
-}
-.leftTeam:hover {
-  opacity: 1;
-}
-.rightTeam:hover {
-  opacity: 1;
-}
-@media all and (max-width: 1070px) {
-  .gridContainerTeam {
-    padding: 0 5% 0 5%;
-  }
-  .headerTeam {
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
 
+@keyframes example-anim-1 {
+  0% {
+    clip: rect(1px, 400px, 276px, 0);
+  }
+  5.5555555556% {
+    clip: rect(333px, 400px, 330px, 0);
+  }
+  11.1111111111% {
+    clip: rect(324px, 400px, 395px, 0);
+  }
+  16.6666666667% {
+    clip: rect(342px, 400px, 248px, 0);
+  }
+  22.2222222222% {
+    clip: rect(90px, 400px, 19px, 0);
+  }
+  27.7777777778% {
+    clip: rect(142px, 400px, 286px, 0);
+  }
+  33.3333333333% {
+    clip: rect(242px, 400px, 282px, 0);
+  }
+  38.8888888889% {
+    clip: rect(372px, 400px, 127px, 0);
+  }
+  44.4444444444% {
+    clip: rect(337px, 400px, 387px, 0);
+  }
+  50% {
+    clip: rect(141px, 400px, 176px, 0);
+  }
+  55.5555555556% {
+    clip: rect(363px, 400px, 106px, 0);
+  }
+  61.1111111111% {
+    clip: rect(346px, 400px, 162px, 0);
+  }
+  66.6666666667% {
+    clip: rect(391px, 400px, 180px, 0);
+  }
+  72.2222222222% {
+    clip: rect(118px, 400px, 371px, 0);
+  }
+  77.7777777778% {
+    clip: rect(383px, 400px, 64px, 0);
+  }
+  83.3333333333% {
+    clip: rect(206px, 400px, 191px, 0);
+  }
+  88.8888888889% {
+    clip: rect(295px, 400px, 389px, 0);
+  }
+  94.4444444444% {
+    clip: rect(293px, 400px, 229px, 0);
+  }
+  100% {
+    clip: rect(67px, 400px, 164px, 0);
+  }
+}
+@keyframes example-anim-2 {
+  0% {
+    clip: rect(222px, 400px, 257px, 0);
+  }
+  5.5555555556% {
+    clip: rect(259px, 400px, 236px, 0);
+  }
+  11.1111111111% {
+    clip: rect(206px, 400px, 203px, 0);
+  }
+  16.6666666667% {
+    clip: rect(256px, 400px, 59px, 0);
+  }
+  22.2222222222% {
+    clip: rect(37px, 400px, 151px, 0);
+  }
+  27.7777777778% {
+    clip: rect(153px, 400px, 205px, 0);
+  }
+  33.3333333333% {
+    clip: rect(320px, 400px, 187px, 0);
+  }
+  38.8888888889% {
+    clip: rect(387px, 400px, 359px, 0);
+  }
+  44.4444444444% {
+    clip: rect(190px, 400px, 60px, 0);
+  }
+  50% {
+    clip: rect(344px, 400px, 364px, 0);
+  }
+  55.5555555556% {
+    clip: rect(215px, 400px, 236px, 0);
+  }
+  61.1111111111% {
+    clip: rect(22px, 400px, 129px, 0);
+  }
+  66.6666666667% {
+    clip: rect(3px, 400px, 123px, 0);
+  }
+  72.2222222222% {
+    clip: rect(160px, 400px, 67px, 0);
+  }
+  77.7777777778% {
+    clip: rect(317px, 400px, 213px, 0);
+  }
+  83.3333333333% {
+    clip: rect(394px, 400px, 234px, 0);
+  }
+  88.8888888889% {
+    clip: rect(266px, 400px, 8px, 0);
+  }
+  94.4444444444% {
+    clip: rect(393px, 400px, 118px, 0);
+  }
+  100% {
+    clip: rect(47px, 400px, 336px, 0);
+  }
+}
+.example > img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.example > img:nth-child(2),
+.example > img:nth-child(3) {
+  clip: rect(0, 0, 0, 0);
+}
+.example > img:nth-child(2) {
+  left: 2px;
+  animation: example-anim-1 2s infinite linear alternate-reverse;
+}
+.example > img:nth-child(3) {
+  left: -2px;
+  animation: example-anim-2 3s infinite linear alternate-reverse;
+}
+
+.wrap {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.removeHide {
+  opacity: 1;
+}
+
+@media all and (max-width: 1070px) {
 }
 @media all and (max-width: 784px) {
-  .rightTeamImg{
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 6;
-    background-size: cover;
-  }
 }
 @media all and (max-width: 519px) {
 }

@@ -4,35 +4,46 @@ const OurTeam = () => {
   return (
     <div id="section-3">
       <div className="container3">
-        <div className="ourteam">
-          <div className="gridContainerTeam">
-            <div className="headerTeam">
-              <h1>Our Team</h1>
-            </div>
-            <div className="imageTeam" />
-            <div className="leftTeamImg" />
-            <div className="leftTeam">
-              <h2>I'm left</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                alias ullam ducimus dolorem qui ut provident mollitia
-                asperiores. Harum dolores animi quo esse perferendis minus
-                consequuntur dolorum temporibus officiis quam!
-              </p>
-            </div>
-            <div className="rightTeamImg" />
-            <div className="rightTeam">
-              <h2>I'm right</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                alias ullam ducimus dolorem qui ut provident mollitia
-                asperiores. Harum dolores animi quo esse perferendis minus
-                consequuntur dolorum temporibus officiis quam!
-              </p>
+          <div className="nameHolderNOT">Nikita</div>
+          <div className="nameHolderDOT">Denis</div>
+          <div className="imageHolderOT" />
+          <div className="facesHolderOT">
+            <div class="wrap">
+              <div class="example">
+                <img
+                  src="https://img.pngio.com/-face-png-400_400.png"
+                  class="grayscale" alt="Nikita"
+                />
+                <img
+                  src="https://peoplepng.com/wp-content/uploads/2019/02/face-png-4.png"
+                  class="invert" alt="Denis"
+                />
+                <img
+                  src="https://peoplepng.com/wp-content/uploads/2019/02/face-png-4.png"
+                  class="blur" alt="Denis"
+                />
+              </div>
+
+              <div class="example hide" id="hide">
+                <img
+                  src="https://peoplepng.com/wp-content/uploads/2019/02/face-png-4.png"
+                  class="grayscale" alt="Denis"
+                />
+                <img
+                  src="https://img.pngio.com/-face-png-400_400.png"
+                  class="invert" alt="Nikita"
+                />
+                <img
+                  src="https://img.pngio.com/-face-png-400_400.png"
+                  class="blur"alt="Nikita"
+                />
+              </div>
             </div>
           </div>
+          <div className="descriptionHolderNOT">Lorem</div>
+          <div className="descriptionHolderDOT">Lorem</div>
         </div>
-      </div>
+
     </div>
   );
 };
