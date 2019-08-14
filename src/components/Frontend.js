@@ -30,8 +30,7 @@ const Frontend = props => {
         <p>
           Your website is often the first experience someone will have with
           your organization. At coders.group we make sure to make the best first
-          impression, with engaging, dynamic website design using the latest
-          technologies
+          impression, with engaging website design.
         </p>
         <div className={`icons gridStyle `} >
           <i className={`fab fa-react iconStyle`} />

@@ -29,6 +29,10 @@ const Header = () => {
           transform your ideas into products.
         </p>
       </div>
+      <div class='mouse-wrapper'>
+<div class="mouse-icon"></div>
+<div class="mouse-arrow"></div>
+</div>
       </div>
       <Menu />
     </div>
