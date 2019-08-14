@@ -11,31 +11,31 @@ const OurTeam = () => {
             <div class="wrap">
               <div class="example">
                 <img
-                  src="https://img.pngio.com/-face-png-400_400.png"
-                  class="grayscale" alt="Nikita"
+                  src="https://i.imgur.com/NCXniU7.png"
+                  alt="Nikita"
                 />
                 <img
-                  src="https://peoplepng.com/wp-content/uploads/2019/02/face-png-4.png"
-                  class="invert" alt="Denis"
+                  src="https://i.imgur.com/6JIHzkU.png"
+                   alt="Denis"
                 />
                 <img
-                  src="https://peoplepng.com/wp-content/uploads/2019/02/face-png-4.png"
-                  class="blur" alt="Denis"
+                  src="https://i.imgur.com/Sy9RNIN.png"
+                 alt="Denis"
                 />
               </div>
 
               <div class="example hide" id="hide">
                 <img
-                  src="https://peoplepng.com/wp-content/uploads/2019/02/face-png-4.png"
-                  class="grayscale" alt="Denis"
+                  src="https://i.imgur.com/WiGNMKf.png"
+                  alt="Denis"
                 />
                 <img
-                  src="https://img.pngio.com/-face-png-400_400.png"
-                  class="invert" alt="Nikita"
+                  src="https://i.imgur.com/e5vFx44.png"
+                  alt="Nikita"
                 />
                 <img
-                  src="https://img.pngio.com/-face-png-400_400.png"
-                  class="blur"alt="Nikita"
+                  src="https://i.imgur.com/PwPSgsP.png"
+                 alt="Nikita"
                 />
               </div>
             </div>
