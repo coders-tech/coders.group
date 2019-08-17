@@ -33,7 +33,7 @@ body {
   height: 35px;
   width: 22px;
   border-radius: 12px;
-  border: 2px solid #101b23;
+  border: 2px solid #fff;
   position: relative;
 }
 
@@ -43,7 +43,7 @@ body {
   width: 3px;
   display: block;
   margin: 5px auto;
-  border: 2px solid #101b23;
+  border: 2px solid #fff;
   -webkit-border-radius: 8px;
   border-radius: 8px;
   -webkit-animation: mouse-wheel 0.6s linear infinite;
@@ -55,8 +55,8 @@ body {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  border-right: 2px solid #101b23;
-  border-bottom: 2px solid #101b23;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   margin: 3px 0 3px 7px;
   width: 8px;
   height: 8px;
@@ -72,8 +72,8 @@ body {
   position: absolute;
   content: '';
   display: block;
-  border-right: 2px solid #101b23;
-  border-bottom: 2px solid #101b23;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   width: 8px;
   height: 8px;
   -webkit-animation: mouse-scroll 1s infinite;

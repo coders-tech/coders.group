@@ -1,6 +1,8 @@
 import React from "react";
 import {animated, useSpring} from 'react-spring'
 
+import '../paragraph.css'
+
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
 const trans = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
 
