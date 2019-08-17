@@ -64,6 +64,16 @@
   color: #48c4f5;
   justify-self: center;
 }
+.descriptionHolderBOT{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transform: rotate(-90deg);
+  display: none;
+  color: #48c4f5;
+  justify-self: center;
+}
 
 @keyframes example-anim-1 {
   0% {
@@ -231,8 +241,120 @@
 }
 
 @media all and (max-width: 1070px) {
+  .container3 {
+    padding: 5% 0 10% 0;
+  }
 }
 @media all and (max-width: 784px) {
+  #imgN1{
+    width: 400px;
+    height: 400px;
+  }
+  #imgN2{
+    width: 400px;
+    height: 400px;
+  }
+  #imgN3{
+    width: 400px;
+    height: 400px;
+  }
+  #imgD1{
+    width: 400px;
+    height: 400px;
+  }
+  #imgD2{
+    width: 400px;
+    height: 400px;
+  }
+  #imgD3{
+    width: 400px;
+    height: 400px;
+  }
+  .facesHolderOT{
+    grid-column-start: 2;
+    grid-column-end:4;
+    grid-row-end: 4;
+    margin-bottom:1%;
+    justify-self: center;
+  }
+  .nameHolderNOT {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  
+  }
+  .nameHolderDOT {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 }
 @media all and (max-width: 519px) {
+  #imgN1{
+    width: 250px;
+    height: 250px;
+  }
+  #imgN2{
+    width: 250px;
+    height: 250px;
+  }
+  #imgN3{
+    width: 250px;
+    height: 250px;
+  }
+  #imgD1{
+    width: 250px;
+    height: 250px;
+  }
+  #imgD2{
+    width: 250px;
+    height: 250px;
+  }
+  #imgD3{
+    width: 250px;
+    height: 250px;
+  }
+  .wrap {
+    width: 0px;
+    height: 250px;
+  margin-left: -180px;
+  }
+  .facesHolderOT{
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-end: 3;
+    margin-bottom:1%;
+    padding: 0;
+    justify-self: center;
+  }
+  .nameHolderNOT {
+    grid-row-start: 2;
+    grid-row-end: 3;
+   font-size: 2em;
+  }
+  .nameHolderDOT {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 2em;
+  }
+  .container3 {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: repeat(3, minmax(130px, auto));
+    padding: 0;
+  }
+  .imageHolderOT{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.descriptionHolderNOT{
+display:none;
+}
+.descriptionHolderDOT{
+display: none
+}
+.descriptionHolderBOT{
+  display: block;
+  z-index: 14;
+  }
 }

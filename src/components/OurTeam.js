@@ -20,21 +20,22 @@ const OurTeam = () => {
             {transitions.map(({ item, key, props }) =>
               item ? (
                 <animated.div class="example" style={props}>
-                  <img src="https://i.imgur.com/NCXniU7.png" alt="Nikita" />
-                  <img src="https://i.imgur.com/SonzLja.png" alt="Denis" />
-                  <img src="https://i.imgur.com/Sy9RNIN.png" alt="Denis" />
+                  <img src="https://i.imgur.com/NCXniU7.png" alt="Nikita" id="imgN1"/>
+                  <img src="https://i.imgur.com/SonzLja.png" alt="Denis" id="imgD2"/>
+                  <img src="https://i.imgur.com/Sy9RNIN.png" alt="Denis" id="imgD3"/>
                 </animated.div>
               ) : (
                 <animated.div class="example" style={props}>
-                  <img src="https://i.imgur.com/50na2v2.png" alt="Denis" />
-                  <img src="https://i.imgur.com/e5vFx44.png" alt="Nikita" />
-                  <img src="https://i.imgur.com/PwPSgsP.png" alt="Nikita" />
+                  <img src="https://i.imgur.com/50na2v2.png" alt="Denis" id="imgD1"/>
+                  <img src="https://i.imgur.com/e5vFx44.png" alt="Nikita" id="imgN2"/>
+                  <img src="https://i.imgur.com/PwPSgsP.png" alt="Nikita" id="imgN3"/>
                 </animated.div>
               )
             )}
           </div>
         </div>
         <div className="descriptionHolderNOT">Web Developer</div>
+        <div className="descriptionHolderBOT">Web Developers</div>
         <div className="descriptionHolderDOT">Web Developer</div>
       </div>
     </div>
