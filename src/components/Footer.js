@@ -7,8 +7,8 @@ const Footer = () => {
             <div className='footer'>
                 <ul>
                     <li>team@coders.group</li>
-                    <li>+3598934123123124</li>
-                    <li>+3598934123123124</li>
+                    <li>+359899343716</li>
+                    <li>+359894304748</li>
                 </ul>
             </div>
         </div>
