@@ -3,3 +3,8 @@
 .parallaxParagraph {
     font-family: "Chakra Petch", "Roboto"
 }
+@media all and (max-height: 320px) and (orientation: landscape) {
+    .parallaxParagraph{
+      font-size: 2em;
+    }
+}
