@@ -1,7 +1,7 @@
 .container3 {
   display: grid;
   grid-template-columns: 20% 30% 30% 20%;
-  grid-template-rows: repeat(5, minmax(130px, auto));
+  grid-template-rows: repeat(4, minmax(130px, auto));
   padding: 5% 5% 10% 0;
 }
 
@@ -17,20 +17,23 @@
   color: #48c4f5;
   transform: rotate(-90deg);
   font-size: 5em;
+  align-self: center;
 }
 .nameHolderDOT {
   grid-column-start: 4;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   color: #48c4f5;
   transform: rotate(-90deg);
   font-size: 5em;
+  align-self: center;
 }
 .imageHolderOT{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 6;
+  grid-row-end: 4;
   background: url("https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,23 +43,24 @@
 .facesHolderOT{
   grid-column-start: 2;
   grid-column-end:4;
-  grid-row-start: 2;
-  grid-row-end: 5;
+  grid-row-end: 3;
   padding: 0 30px;
+  margin-bottom: -3%;
   justify-self: center;
 }
 .descriptionHolderNOT{
   grid-column-start: 1;
   grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-start: 3;
+ 
   color: #48c4f5;
   justify-self: center;
 }
 .descriptionHolderDOT{
   grid-column-start: 4;
-  grid-row-start: 1;
-  grid-row-end: 5;
+  grid-column-end: 4;
+  grid-row-start: 3;
+
   color: #48c4f5;
   justify-self: center;
 }

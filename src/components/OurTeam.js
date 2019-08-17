@@ -21,12 +21,12 @@ const OurTeam = () => {
               item ? (
                 <animated.div class="example" style={props}>
                   <img src="https://i.imgur.com/NCXniU7.png" alt="Nikita" />
-                  <img src="https://i.imgur.com/6JIHzkU.png" alt="Denis" />
+                  <img src="https://i.imgur.com/SonzLja.png" alt="Denis" />
                   <img src="https://i.imgur.com/Sy9RNIN.png" alt="Denis" />
                 </animated.div>
               ) : (
                 <animated.div class="example" style={props}>
-                  <img src="https://i.imgur.com/WiGNMKf.png" alt="Denis" />
+                  <img src="https://i.imgur.com/50na2v2.png" alt="Denis" />
                   <img src="https://i.imgur.com/e5vFx44.png" alt="Nikita" />
                   <img src="https://i.imgur.com/PwPSgsP.png" alt="Nikita" />
                 </animated.div>
@@ -34,8 +34,8 @@ const OurTeam = () => {
             )}
           </div>
         </div>
-        <div className="descriptionHolderNOT">Lorem</div>
-        <div className="descriptionHolderDOT">Lorem</div>
+        <div className="descriptionHolderNOT">Web Developer</div>
+        <div className="descriptionHolderDOT">Web Developer</div>
       </div>
     </div>
   );
