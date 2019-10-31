@@ -33,10 +33,10 @@ const Frontend = props => {
           impression, with engaging website design.
         </p>
         <div className={`icons gridStyle `} >
-          <i className={`fab fa-react iconStyle`} />
-          <i className={`fab fa-angular iconStyle`} />
-          <i className={`fab fa-vuejs iconStyle`}  />
-          <i className={`fab fa-js iconStyle`}  />
+          <a href="https://hackernoon.com/7-reasons-why-should-startups-immediately-switch-to-reactjs-in-2018-6b4c473257a3"><i className={`fab fa-react iconStyle`} /></a>
+          <a href="https://bigstartups.co/articles/article/7-strong-reasons-to-choose-angular-"><i className={`fab fa-angular iconStyle`} /></a>
+          <a href="https://www.vtnetzwelt.com/web/why-choose-vuejs/"><i className={`fab fa-vuejs iconStyle`}  /></a>
+          <a href="https://medium.com/front-end-weekly/why-javascript-should-be-your-technology-for-startups-fd2e5f8b982a"><i className={`fab fa-js iconStyle`}  /></a>
         </div>
       </motion.div>
     </div>

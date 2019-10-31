@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap");
+
 html {
   scroll-behavior: smooth;
   overflow: -moz-scrollbars-none;
   max-width: 100%;
   overflow-x: hidden;
   background: #101b23;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
 }
 ::-webkit-scrollbar {
   width: 0 !important;
@@ -14,8 +17,10 @@ html {
 body {
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
   font-family: system-ui, sans-serif;
   display: grid;
+  overflow: -moz-scrollbars-none;
   font-family: "Roboto", sans-serif;
   min-width: 300px;
 }
@@ -135,6 +140,7 @@ nav {
   overflow-x: hidden;
   top: 0; /* Stay at the top */
   left: 0;
+  overflow: -moz-scrollbars-none;
 }
 nav ul {
   list-style: none;
@@ -177,7 +183,7 @@ nav ul li a.current {
   width: 60%;
   /* background-image: url("https://lh3.googleusercontent.com/k-x0BqA0miXzrFnDTyiSEvxr__MUWQoqqq9VIGrFBUv7DvclHt5N9Tc_kruYeDBcgsSlo065_o6tSxvMXtQxrmH9qX7BSC31yWDXe0Ho=s1600"); */
   background-image: url("https://images.unsplash.com/photo-1493020258366-be3ead1b3027?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
-  background-color: #3d8dac94;
+  background-color: #fdfcfcbd;
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;

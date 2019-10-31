@@ -23,10 +23,10 @@ const Backend = props => {
           backend architectures to deliver productive user experience.
         </p>
         <div className={`icons gridStyle`} >
-          <i className={`fab fa-node iconStyle`} />
-          <i className={`fab fa-python iconStyle `} />
-          <i className={`fab fa-aws iconStyle`} />
-          <i className={`fab fa-digital-ocean iconStyle`} />
+          <a href="https://medium.com/swlh/how-node-js-bring-success-to-your-online-business-aa5db90d3151"><i className={`fab fa-node iconStyle`} /></a>
+          <a href="https://business.udemy.com/blog/what-is-python-used-for-in-business-today/"><i className={`fab fa-python iconStyle `} /></a>
+          <a href="https://aws.amazon.com/business-applications/"><i className={`fab fa-aws iconStyle`} /></a>
+          <a href="https://www.digitalocean.com/customers/"><i className={`fab fa-digital-ocean iconStyle`} /></a>
         </div>
       </motion.div>
       <h2 className='titleLeft'>Backend</h2>
