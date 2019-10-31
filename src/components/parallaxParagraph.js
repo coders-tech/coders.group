@@ -12,8 +12,8 @@ const ParallaxParagraph = () => {
   return (
     <animated.div className="parallaxParagraph" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
       <animated.p style={{ transform: props.xy.interpolate(trans) }}>
-        At <span>coders/group</span> we combine <span className="underline">technology</span>, <span className="underline">creativity</span> and <span className="underline">strategy</span> to
-        transform your ideas into products.
+        <h1>At <span>coders/group</span> we combine <span className="underline">technology</span>, <span className="underline">creativity</span> and <span className="underline">strategy</span> to
+        transform your ideas into products.</h1>
       </animated.p>
     </animated.div>
   );

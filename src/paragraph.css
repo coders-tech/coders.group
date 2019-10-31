@@ -4,3 +4,12 @@
     font-family: "Chakra Petch", "Roboto";
     font-size: 5em;
 }
+
+.parallaxParagraph h1 {
+  font-size: 0.9em;
+}
+@media all and (max-height: 320px) and (orientation: landscape) {
+    .parallaxParagraph{
+      font-size: 2em;
+    }
+}
