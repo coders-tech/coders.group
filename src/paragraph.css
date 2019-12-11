@@ -13,3 +13,8 @@
       font-size: 2em;
     }
 }
+@media all and (max-width: 450px){
+  .parallaxParagraph{
+    font-size: 2em;
+  }
+}
